@@ -1,0 +1,443 @@
+extends layout
+
+block content
+    body.pictured
+        #page
+            header#header.smooth
+                .row
+                    .col-xs-12
+                        #intro.text-container
+                            #logo
+                                img(alt='logo', src='images/logo-AD-circular.png')
+                            h1
+                                font(color="786A9A") ALSACE
+                                font(color="C53C1C") DIGITALE
+                            h2 Les pionniers de l'inévitable
+                            #explore
+                                a.scroll(href='#team')
+                                    i.icon-angle-down.icon-4x
+
+        #top-bar
+            .container
+                .row
+                    .col-md-4
+                        #logo-lettering
+                            a.scroll(href='#header')
+                                img(alt='Alsace Digitale', src='images/logo-AD.png')
+
+                        #menu-mobile.hidden-md.hidden-lg
+                            i.icon-reorder.icon-2x
+                    .col-md-8
+                        nav#top-navigation
+                            ul.list-inline
+                                li
+                                    a(href='#team') l'équipe
+                                li
+                                    a(href='#plage') la plage
+                                li
+                                    a(href='#event') les évènements
+                                li
+                                    a(href='#feed') social
+                                li
+                                    a(href='#contacts') contact
+
+        section#team
+            .row
+                .col-xs-12.col-sm-6.col-sm-offset-3.intro
+                    h1 L'équipe.
+                    p
+                        | Faire confiance aux honnêtes gens est le seul vrai risque des professions aventureuses.
+
+            .container.row
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Stéphane Becker')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Stéphane Becker')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Stéphane Becker
+                    p Président
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-envelope.icon-2x
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Yann Klis')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Yann Klis')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Yann Klis
+                    p Vice Président
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-linkedin.icon-2x
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Emmanuel Ebel-Jost')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Emmanuel Ebel-Jost')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Emmanuel Ebel-Jost
+                    p Assesseur
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-linkedin.icon-2x
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Yannick Jost')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Yannick Jost')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Yannick Jost
+                    p Secrétaire
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-linkedin.icon-2x
+            .container.row
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Stéphane Bourhis')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Stéphane Bourhis')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Stéphane Bourhis
+                    p Trésorier
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-envelope.icon-2x
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Pascal Bastien')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Pascal Bastien')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Pascal Bastien
+                    p Vice Président
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-linkedin.icon-2x
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Frédéric Maquin')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Frédéric Maquin')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Frédric Maquin
+                    p Assesseur
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-linkedin.icon-2x
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Fadoua Kawni')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Fadoua Kawni')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Fadoua Kawni
+                    p Secrétaire
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-linkedin.icon-2x
+            .container.row
+            .container.row
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Sandrine Hilaire')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Sandrine Hilaire')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Sandrine Hilaire
+                    p Trésorier
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-envelope.icon-2x
+                .col-xs-6.col-sm-6.col-md-3.member
+                    .member-photo
+                        .image
+                            img(src='/images/team/stephane.jpg', alt='Sébastien Lettelié')
+                        .image-hover
+                            img(src='/images/team/stephane.jpg', alt='Sébastien Lettelié')
+                        .member-hover.hidden-xs.hidden-sm
+                            .list-container
+                                ul.list-inline.social
+                                    li
+                                        a
+                                            i.icon-facebook.icon-3x
+                                    li
+                                        a
+                                            i.icon-twitter.icon-3x
+                                    li
+                                        a
+                                            i.icon-linkedin.icon-3x
+                    h5 Sébastien Letellié
+                    p Vice Président
+                    .list-container.visible-xs.visible-sm
+                        ul.list-inline
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-linkedin.icon-2x
+        section#plage
+            .row
+                .col-xs-12.col-sm-6.col-sm-offset-3.intro
+                    h1 La Plage.
+                    p
+                        | La tristesse est un pays. Quand on est dans la tristesse, on ne peut être ni à la plage ni à la campagne.
+            .studio
+                .row
+                    .col-xs-12
+                        #swiper.swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    img(src='/images/plage/la_plage_1.jpg', alt='la plage 1')
+                                .swiper-slide
+                                    img(src='/images/plage/la_plage_2.jpg', alt='la plage 2')
+                                .swiper-slide
+                                    img(src='/images/plage/la_plage_3.jpg', alt='la plage 3')
+
+        section#event
+            .row
+                .col-xs-12.col-sm-6.col-sm-offset-3.intro
+                    h1 Les évènements
+                    p L'oeuvre est une sueur.
+
+            #w-filter.row
+                .col-xs-12
+                    #work-filter.center-list
+                        ul.list-inline.hidden-xs
+                            li.filter.active(data-filter='all') tous
+                            li.filter(data-filter='branding') entreprenariat
+                            li.filter(data-filter='photography') culture
+                            li.filter(data-filter='illustration') hacking
+            #work-container.container.row
+                .col-xs-12.col-sm-4.mix.all.branding
+                    #work-1.work
+                        img(src='/images/event/edgefest2.jpg', alt='work')
+                        .work-info
+                            h6 Edgefest
+                .col-xs-12.col-sm-4.mix.all.branding
+                    #work-2.work
+                        img(src='/images/event/startup-weekend.jpg', alt='work')
+                        .work-info
+                            h6 Startup Weekend
+                .col-xs-12.col-sm-4.end.mix.all.branding
+                    #work-3.work
+                        img(src='http://placekitten.com/720/540', alt='work')
+                        .work-info
+                            h6 Hack The Culture
+                .col-xs-12.col-sm-4.mix.all.branding
+                    #work-4.work
+                        img(src='/images/event/hack-sxb.jpg', alt='work')
+                        .work-info
+                            h6 HackSXB
+                .col-xs-12.col-sm-4.mix.all.illustration
+                    #work-5.work
+                        img(src='/images/event/demonight.jpg', alt='work')
+                        .work-info
+                            h6 Demo Night
+                .col-xs-12.col-sm-4.mix.all.photography
+                    #work-6.work
+                        img(src='/images/event/devoxx.jpg', alt='work')
+                        .work-info
+                            h6 Devoxx4Kids
+                .col-xs-12.col-sm-4.end.mix.all.video
+                    #work-7.work
+                        img(src='http://placekitten.com/720/540', alt='work')
+                        .work-info
+                            h6 Digital Health Camp
+                .col-xs-12.col-sm-4.mix.all.video
+                    #work-8.work
+                        img(src='/images/event/barcamp.jpg', alt='work')
+                        .work-info
+                            h6 Barcamp Alsace
+                .col-xs-12.col-sm-4.mix.all.video
+                    #work-9.work
+                        img(src='/images/event/hacklechalet.jpg', alt='work')
+                        .work-info
+                            h6 Hack Le Chalet
+
