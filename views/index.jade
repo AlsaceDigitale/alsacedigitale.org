@@ -35,7 +35,7 @@ block content
                                 li
                                     a(href='#plage') la plage
                                 li
-                                    a(href='#event') les évènements
+                                    a(href='#works') les évènements
                                 li
                                     a(href='#feed') social
                                 li
@@ -54,7 +54,7 @@ block content
                         .image
                             img(src='/images/team/stephane.jpg', alt='Stéphane Becker')
                         .image-hover
-                            img(src='/images/team/stephane.jpg', alt='Stéphane Becker')
+                            img(src='http://placekitten.com/768/960', alt='Stéphane Becker')
                         .member-hover.hidden-xs.hidden-sm
                             .list-container
                                 ul.list-inline.social
@@ -380,7 +380,7 @@ block content
                                 .swiper-slide
                                     img(src='/images/plage/la_plage_3.jpg', alt='la plage 3')
 
-        section#event
+        section#works
             .row
                 .col-xs-12.col-sm-6.col-sm-offset-3.intro
                     h1 Les évènements
@@ -391,53 +391,166 @@ block content
                     #work-filter.center-list
                         ul.list-inline.hidden-xs
                             li.filter.active(data-filter='all') tous
-                            li.filter(data-filter='branding') entreprenariat
-                            li.filter(data-filter='photography') culture
-                            li.filter(data-filter='illustration') hacking
+                            li.filter(data-filter='entreprenariat') entreprenariat
+                            li.filter(data-filter='culture') culture
+                            li.filter(data-filter='hacking') hacking
             #work-container.container.row
-                .col-xs-12.col-sm-4.mix.all.branding
+                .col-xs-12.col-sm-4.mix.all.culture
                     #work-1.work
                         img(src='/images/event/edgefest2.jpg', alt='work')
                         .work-info
                             h6 Edgefest
-                .col-xs-12.col-sm-4.mix.all.branding
+                .col-xs-12.col-sm-4.mix.all.entreprenariat
                     #work-2.work
                         img(src='/images/event/startup-weekend.jpg', alt='work')
                         .work-info
                             h6 Startup Weekend
-                .col-xs-12.col-sm-4.end.mix.all.branding
+                .col-xs-12.col-sm-4.end.mix.all.culture
                     #work-3.work
                         img(src='http://placekitten.com/720/540', alt='work')
                         .work-info
                             h6 Hack The Culture
-                .col-xs-12.col-sm-4.mix.all.branding
+                .col-xs-12.col-sm-4.mix.all.hacking
                     #work-4.work
                         img(src='/images/event/hack-sxb.jpg', alt='work')
                         .work-info
                             h6 HackSXB
-                .col-xs-12.col-sm-4.mix.all.illustration
+                .col-xs-12.col-sm-4.mix.all.entreprenariat
                     #work-5.work
                         img(src='/images/event/demonight.jpg', alt='work')
                         .work-info
                             h6 Demo Night
-                .col-xs-12.col-sm-4.mix.all.photography
+                .col-xs-12.col-sm-4.mix.all.hacking
                     #work-6.work
                         img(src='/images/event/devoxx.jpg', alt='work')
                         .work-info
                             h6 Devoxx4Kids
-                .col-xs-12.col-sm-4.end.mix.all.video
+                .col-xs-12.col-sm-4.end.mix.all.hacking
                     #work-7.work
                         img(src='http://placekitten.com/720/540', alt='work')
                         .work-info
                             h6 Digital Health Camp
-                .col-xs-12.col-sm-4.mix.all.video
+                .col-xs-12.col-sm-4.mix.all.culture
                     #work-8.work
                         img(src='/images/event/barcamp.jpg', alt='work')
                         .work-info
                             h6 Barcamp Alsace
-                .col-xs-12.col-sm-4.mix.all.video
+                .col-xs-12.col-sm-4.mix.all.hacking
                     #work-9.work
                         img(src='/images/event/hacklechalet.jpg', alt='work')
                         .work-info
                             h6 Hack Le Chalet
 
+        section#feed
+            .row
+                .col-xs-12.col-sm-6.col-sm-offset-3.intro
+                    h2 Social feeder.
+                    p L'ubiquité numérique.
+            .row
+                .col-xs-12.col-sm-12
+                    ul#social-feed.centerUl
+                        li#flickr-feed.active
+                            a
+                                i.icon-flickr.icon-4x
+                        li#instagram-feed
+                            a
+                                i.icon-instagram.icon-4x
+                        li#twitter-feed
+                            a
+                                i.icon-twitter.icon-4x
+
+            #flickr.row.feed
+            #instagram.row.feed
+            #twitter.row.feed
+
+        section#contacts
+            .row
+                .col-xs-12.col-sm-6.col-sm-offset-3.intro
+                    h1 Nous contacter
+                    p
+                        | En principe nous pouvons vous répondre...
+            .row
+                .col-xs-12.col-sm-8.col-sm-offset-2
+                    form#contact-form(action='/', method='post')
+                        .row
+                            .col-xs-12.formContainer
+                                input#name.requiredField(type='text', name='name', value='', placeholder='Nom')
+                            .col-xs-12.formContainer
+                                input#email.requiredField.email(type='text', name='email', value='', placeholder='Courriel')
+                            .col-xs-12.formContainer
+                                textarea#message.requiredField(name='message', rows='20', cols='30', placeholder='Message')
+                            .col-xs-12.formContainer
+                                input#submitted.button(type='hidden', name='submitted', value='SEND')
+                                button#submit.btn(type='submit') Envoyer
+                            .col-xs-12.formContainer
+                                p#error.alert(data-alert='data-alert') Merci de remplir correctement le formulaire
+                                p#thanks.alert.alert-success(data-alert='data-alert') Merci. Nous vous répondrons dès que possible.
+                                p#timedout.alert(data-alert='data-alert') La connexion au serveur a échoué.
+                                p#state.alert(data-alert='data-alert')
+            .row
+                .col-xs-12.col-sm-6.col-sm-offset-3
+                    .contact-info
+                        .row
+                            .col-sm-4.contact
+                                .icon
+                                    a
+                                        i.icon-envelope.icon-3x
+                                p hello@alsacedigitale.org
+                            .col-sm-4.contact
+                                .icon
+                                    a(href='https://maps.google.fr/maps?q=la+plage+digitale+strasbourg&hl=fr&sll=48.599123,7.587081&sspn=1.770983,4.22699&hq=la+plage+digitale&hnear=Strasbourg,+Bas-Rhin,+Alsace&t=m&z=15&iwloc=A', targe='_blank')
+                                        i.icon-map-marker.icon-3x
+                                p
+                                    | La Plage
+                                    br
+                                    | 0000-000
+                                    br
+                                    | Strasbourg
+                            .col-sm-4.contact
+                                .icon
+                                    a
+                                        i.icon-phone.icon-3x
+                                p +33 3.88.31.63.03
+
+        footer
+            .row
+                .col-xs-12.col-sm-6.col-sm-offset-3
+                    hr
+                    #social-profiles
+                        ul.centerUl
+                            li
+                                a
+                                    i.icon-facebook.icon-2x
+                            li
+                                a(href='https://twitter.com/laplagedigitale', target='_blank')
+                                    i.icon-twitter.icon-2x
+                            li
+                                a
+                                    i.icon-linkedin.icon-2x
+                            li
+                                a
+                                    i.icon-instagram.icon-2x
+                            li
+                                a
+                                    i.icon-flickr.icon-2x
+                            li
+                                a
+                                    i.icon-google-plus.icon-2x
+            .row
+                .col-xs-12.col-sm-6.col-sm-offset-3
+                    p#copyrights Cotton® Made by digitalcookers™. All rights reserved.
+        //
+           END FOOTER
+
+        #project-page
+            #project-top-bar
+                .row
+                    .col-xs-2
+                        #previous-project
+                        #previous-project-name
+                    .col-xs-8
+                        #close-project
+                    .col-xs-2
+                        #next-project
+                        #next-project-name
+            #project

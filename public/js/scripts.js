@@ -318,11 +318,11 @@ jQuery(document).ready(function() {
 
 	/* Initalize Twitter Feed */
 		$('#twitter').tweetable({
-			username: 'digitalcookers', 
+			username: 'laplagedigitale',
 			time: true,
 			limit: 5,
 			replies: false,
-			loading: 'Pacience is an art...' ,
+			loading: 'Patience is an art...' ,
 			position: 'append',
 			failed: "Sorry, twitter is currently unavailable for this user.",
 			html5: true,
@@ -348,7 +348,7 @@ jQuery(document).ready(function() {
 	jQuery('#flickr').jflickrfeed({
 		limit: 12,
 		qstrings: {
-			id: '36587311@N08'
+			id: '35656397@N00'
 		},
 		itemTemplate: '<div class="col-xs-3 col-sm-2 flickr-photo"><a href="{{image_b}}"target="_blank"> <img src="{{image_m}}" alt="{{title}}" /> </a></div>'
 	});
