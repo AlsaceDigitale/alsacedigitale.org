@@ -348,7 +348,7 @@ jQuery(document).ready(function() {
 	jQuery('#flickr').jflickrfeed({
 		limit: 12,
 		qstrings: {
-			id: '35656397@N00'
+			id: '116018854@N07'
 		},
 		itemTemplate: '<div class="col-xs-3 col-sm-2 flickr-photo"><a href="{{image_b}}"target="_blank"> <img src="{{image_m}}" alt="{{title}}" /> </a></div>'
 	});
