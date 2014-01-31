@@ -1,3 +1,7 @@
 .member p {
   margin-bottom: 1em;
 }
+h1,
+h2 {
+  text-shadow: 2px 2px black;
+}
