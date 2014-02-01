@@ -259,6 +259,10 @@ section#plage{padding-bottom: 0;overflow:hidden;}
 
 .instagram-placeholder,.flickr-photo{margin-bottom: 1em;}
 
+.flickr-photo {
+    width: 20%;
+}
+
 /* ==========================================================================
    Contact Styles
    ========================================================================== */

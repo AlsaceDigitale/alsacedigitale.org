@@ -350,8 +350,12 @@ jQuery(document).ready(function() {
 		qstrings: {
 			id: '116018854@N07'
 		},
-		itemTemplate: '<div class="col-xs-3 col-sm-2 flickr-photo"><a href="{{image_b}}"target="_blank"> <img src="{{image_m}}" alt="{{title}}" /> </a></div>'
-	});
+		itemTemplate: '<div class="flickr-photo"><a href="{{image_b}}"target="_blank"> <img src="{{image_m}}" alt="{{title}}" /> </a></div>'
+	}, function(data) {
+        $("#flickr").imagesLoaded( function() {
+                $("#flickr").masonry({ columnWidth: 0, itemSelector: '.flickr-photo', gutter: 0 });
+            });
+    });
 	
 	/* Initalize Instagram Feed */
 	jQuery.fn.spectragram.accessData={accessToken:'2136707.12e2743.9576ae17af4e4ad4aebf6b72433c01fd',clientID:'12e27430fe054c72839c5f16f86177e1'};
