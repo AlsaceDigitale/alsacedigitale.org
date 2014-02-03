@@ -206,9 +206,9 @@ jQuery(document).ready(function() {
 			window.scrollTo(0,0);
 			jQuery("#project-page").fadeIn(750);
 		});
-	    jQuery('#project').load(curWork+".html");
-		jQuery("#previous-project-name").load("work-"+previousWork+".html #project-title");
-		jQuery("#next-project-name").load("work-"+nextWork+".html #project-title");
+	    jQuery('#project').load("/work/" + cur);
+		jQuery("#previous-project-name").load("/work/"+previousWork+" #project-title");
+		jQuery("#next-project-name").load("/work/"+nextWork+" #project-title");
 	
 	});
 	
