@@ -227,7 +227,7 @@ jQuery(document).ready(function() {
 		var cur = nextWork;
 		jQuery("#next-project-name").animate({"right":"8em","opacity":"0"}, 500, function(){
 			jQuery("#project").fadeOut(500,function(){
-				jQuery('#project').load("work-"+cur+".html");	
+				jQuery('#project').load("work/"+cur);
 				nextWork=cur+1;
 				previousWork=cur-1;
 				if (previousWork == 0){
@@ -236,8 +236,8 @@ jQuery(document).ready(function() {
 				if (nextWork == jQuery('.work').length+1){
 					nextWork=1;
 				}
-				jQuery("#previous-project-name").load("work-"+previousWork+".html #project-title");
-				jQuery("#next-project-name").load("work-"+nextWork+".html #project-title");
+				jQuery("#previous-project-name").load("work/"+previousWork+" #project-title");
+				jQuery("#next-project-name").load("work/"+nextWork+" #project-title");
 				jQuery("#project").fadeIn(500);
 			});
 		});
@@ -248,7 +248,7 @@ jQuery(document).ready(function() {
 		var cur = previousWork;
 		jQuery("#previous-project-name").animate({"left":"8em","opacity":"0"}, 500, function(){
 			jQuery("#project").fadeOut(500,function(){
-				jQuery('#project').load("work-"+cur+".html");	
+				jQuery('#project').load("work/"+cur);
 				nextWork=cur+1;
 				previousWork=cur-1;
 				if (previousWork == 0){
@@ -257,8 +257,8 @@ jQuery(document).ready(function() {
 				if (nextWork == jQuery('.work').length+1){
 					nextWork=1;
 				}
-				jQuery("#previous-project-name").load("work-"+previousWork+".html #project-title");
-				jQuery("#next-project-name").load("work-"+nextWork+".html #project-title");	
+				jQuery("#previous-project-name").load("work/"+previousWork+" #project-title");
+				jQuery("#next-project-name").load("work/"+nextWork+" #project-title");
 				jQuery("#project").fadeIn(500);
 			});
 		});
