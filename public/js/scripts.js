@@ -19,16 +19,16 @@ $('<img/>').attr('src', '/images/plage.jpg').load(function() {
 
 textCenter();
 
-	function textCenter()
+function textCenter()
 {
 	$('.text-container').css({
         position:'absolute'
     });
 
     $('.text-container').css({
- 
-        left: ($(window).width() - $('.text-container').outerWidth())/2,
-        top: ($(window).height() - $('.text-container').outerHeight())/2
+
+        left: ($(window).width() - $('#logo').outerWidth())/2,
+        top: ($(window).height() - $('#logo').outerHeight())/2
 
     });
 
@@ -39,7 +39,8 @@ jQuery(document).ready(function() {
 	/*-----------------------------------------------------------------------------------*/
 	/*	Navigation
 	/*-----------------------------------------------------------------------------------*/
-	
+    textCenter();
+
 	var animate='down';
 	
 	jQuery(window).bind('scroll', function () {

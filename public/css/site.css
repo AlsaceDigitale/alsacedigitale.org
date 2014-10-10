@@ -1,7 +1,18 @@
 .member p {
   margin-bottom: 1em;
 }
-h1,
-h2 {
-  text-shadow: 2px 2px black;
+section#plage h1 {
+  color: #ffffff;
+}
+section#plage a {
+  color: #ffffff;
+}
+section#plage p {
+  color: #19304d !important;
+}
+section#works h1 {
+  color: #ffffff;
+}
+section#works p {
+  color: #19304d;
 }

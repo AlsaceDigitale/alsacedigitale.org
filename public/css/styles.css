@@ -11,20 +11,19 @@ Author URI:         http://creativemarket.com/digitalcookers
    General Styles
    ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Cabin);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 html,body,#page{width: 100%;height: 100%;margin: 0px;padding: 0px; -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;}
 html{-webkit-font-smoothing: antialiased;}
-body {background: #fff; font-family: 'Cabin','Helvetica Neue';line-height: 1.2em;}   
-h1,h2,h3,h4,h5,h6{color: #f4594e;letter-spacing: -0.03em;font-weight: bold; font-weight: 900; font-family: 'PT Sans', Times, serif;}
+body {background: #fff; font-family: 'Open Sans','Helvetica Neue';line-height: 1.2em;}
+h1,h2,h3,h4,h5,h6{color: #3679b0;letter-spacing: -0.03em;font-weight: 300; font-family: 'Open Sans', Times, serif;}
 
-a{color: #f4594e; cursor:pointer;}
+a{color: #3679b0; cursor:pointer;}
 p{color: #4a4a4a;font-size: 1.125em;line-height: 1.5625em;}
-select{color: white;padding: 0 1em; height: 2.4em;outline: none;border: 0;border-radius: 0 !important;background: url('../images/arrow-down.png') no-repeat right 0.8em #f4594e;-webkit-appearance: none;}
-time{color:#f4594e;}
+select{color: white;padding: 0 1em; height: 2.4em;outline: none;border: 0;border-radius: 0 !important;background: url('../images/arrow-down.png') no-repeat right 0.8em #3679b0;-webkit-appearance: none;}
+time{color:#3679b0;}
 /* ==========================================================================
    helpers
    ========================================================================== */
@@ -86,33 +85,33 @@ height: 100%;
 #intro h2{margin-bottom: 0;font-size: 1.5em;opacity:0;padding-top: 2em;}
 #intro p{color:white;}
 
+
 #explore {opacity:0;margin-top: 0em;}
 #explore a {text-decoration: none;}
 #explore a i{font-size:6em;margin:0 auto; color:white; cursor:pointer; color:white;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
-.touch #explore a i:hover,.no-touch #explore a i:hover{color:#f4594e;}
+.touch #explore a i:hover,.no-touch #explore a i:hover{color:#3679b0;}
 
 /* ==========================================================================
    Navigation Styles
    ========================================================================== */
 
-#top-bar{position:fixed;top:-75px;z-index: 999;width:100%;height:auto;background-color:#1a1a1a;}
+#top-bar{position:fixed;top:-75px;z-index: 999;width:100%;height:auto;background-color:#162741;}
 #top-navigation ul{display:none;font-size: 1.5em;margin-top: 0.7em;}
 #top-navigation li{width:100%; margin-bottom: 1em; }
 #top-navigation li a{text-decoration:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
-#top-navigation li:not(active) a{color:#fff;}
-#top-navigation li.active a, #top-navigation li:hover a{color:#f4594e;}
+#top-navigation li:not(active) a{color:#ffffff;}
+#top-navigation li.active a, #top-navigation li:hover a{color:#3679b0;}
 
 #logo-lettering img{height: 3.125em;}
 
 #menu-mobile i{position:absolute;top:0.3em;right:0.6em; color: white; cursor:pointer;}
-#menu-mobile:hover i,#menu-mobile.active i{color:#f4594e;}
+#menu-mobile:hover i,#menu-mobile.active i{color:#3679b0;}
 
 /* ==========================================================================
    All Section Styles
    ========================================================================== */
    
 section{padding-top: 3.125em;padding-bottom: 1.875em;text-align: center;}
-section h1,.intro p{margin-bottom: 0; }  
 
 
 /* ==========================================================================
@@ -127,7 +126,7 @@ section h1,.intro p{margin-bottom: 0; }
 .member-photo{position:relative; overflow: hidden; margin-bottom: 1.8em;background: #000;}
 .member-photo img{width: 100%;display:block;margin: 0 auto;}
 
-.member-hover{position: absolute;top: 0;right: 0;width: 100%;height: 100%;background-color: rgb(244,89,78);background-color: rgba(244,89,78,0);-webkit-transition: background-color 0.4s ease-in-out;-moz-transition: background-color 0.4s ease-in-out;-o-transition: background-color 0.4s ease-in-out;transition: background-color 0.4s ease-in-out;}
+.member-hover{position: absolute;top: 0;right: 0;width: 100%;height: 100%;background-color: rgb(63,142,204);background-color: rgba(63,142,204,0);-webkit-transition: background-color 0.4s ease-in-out;-moz-transition: background-color 0.4s ease-in-out;-o-transition: background-color 0.4s ease-in-out;transition: background-color 0.4s ease-in-out;}
 
 /* Social List */
 
@@ -148,7 +147,7 @@ ul.social li a:hover i{color:white;}
 
 
 /* Animations */
-.member-photo:hover .member-hover{background-color: rgba(244,89,78,0.5);}
+.member-photo:hover .member-hover{background-color: rgba(63,142,204,0.5);}
 .member-photo:hover .list-container{opacity:0.9;}
 
 /* Team Images Change Hover */
@@ -159,7 +158,9 @@ ul.social li a:hover i{color:white;}
    plage Styles
    ========================================================================== */
 section#plage{padding-bottom: 0;overflow:hidden;}
-#plage, #contacts{background:#f2f2f2;}	
+#plage, #works {background-color:#3f8ecc;}
+#contacts {background-color: #f2f2f2}
+
 .swiper-slide:not(.swiper-slide-active) img{-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}
 
 /* Swiper - Mobile Touch Slider CSS 
@@ -195,17 +196,17 @@ section#plage{padding-bottom: 0;overflow:hidden;}
 .skills-bar li {position:relative;margin-bottom: 30px;height: 40px;background: #333;}
 .skills-bar li:last-child {margin-bottom: 0px;}
 .skills-bar li em {position: absolute;top: 10px;color:white;font-weight: bold;}
-.expand {position: absolute;left: 0;height: 40px;background: #f4594e;}
+.expand {position: absolute;left: 0;height: 40px;background: #3679b0;}
 
 /* Animations */
 .service:hover, .service.active{color: #1a1a1a;}
-.service:hover h5, .service.active h5{color: #f4594e;}
+.service:hover h5, .service.active h5{color: #3679b0;}
 
 /* ==========================================================================
    Work Styles
    ========================================================================== */
    
-#works{padding-bottom: 3.25em;background-color:#f2f2f2;overflow-x: hidden;}
+#works{padding-bottom: 3.25em;background-color:#3f8ecc;overflow-x: hidden;}
 #works .intro{margin-bottom:1.5em;}
 #w-filter.row select.visible-xs{width:100%;}
 
@@ -213,8 +214,8 @@ section#plage{padding-bottom: 0;overflow:hidden;}
 .work img{position: relative; width:100%;top:0;-webkit-transition: top 0.3s ease-in-out;-moz-transition: top 0.3s ease-in-out;-o-transition: top 0.3s ease-in-out;transition: top 0.3s ease-in-out; display:block;-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}
 
 #work-filter{margin:0;margin-bottom: 0.5em;font-weight: bold;font-size: 1.3125em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
-#work-filter li{cursor:pointer;}
-#work-filter li.active, #work-filter li:hover{color:#f4594e;}
+#work-filter li{cursor:pointer;color:#19304d;}
+#work-filter li.active, #work-filter li:hover{color:#ffffff;}
 #work-filter ul {margin-bottom:2em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 #works select{margin-bottom: 2em;}
 
@@ -249,8 +250,8 @@ section#plage{padding-bottom: 0;overflow:hidden;}
 #twitter ul.tweetList {position: absolute;}
 #twitter ul.tweetList li {list-style:none;height: 10em;font-size: 1.25em;}
 #twitter ul.tweetList li p{font-size: 1em;}
-#tweet_loader{font-size: 2em;text-align: center; color:#f4594e;}
-#loading{color:#f4594e;}
+#tweet_loader{font-size: 2em;text-align: center; color:#3679b0;}
+#loading{color:#3679b0;}
 
 #instagram li{list-style: none;}
 #flickr .col-xs-3,#instagram .col-xs-3,#flickr .col-sm-2, #instagram .col-sm-2{margin: 0;padding: 0;}
@@ -274,7 +275,7 @@ input[type="text"], textarea{padding:0.6em;width: 100%;outline: none;border: non
 input[type="text"]:focus, textarea:focus{background: #e6e6e6; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; transition: all 0.15s linear;}
 
 
-#contacts .btn{width:100%;margin-top:1em; border-radius:0; border:none; background-color: #f4594e; color: white;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+#contacts .btn{width:100%;margin-top:1em; border-radius:0; border:none; background-color: #3679b0; color: white;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
 #contacts .btn:hover{background-color: #2a2a2a; color: white;}
 .formContainer{position: relative;}
 
@@ -293,10 +294,10 @@ span.valid{background-image:url("../images/notifications/valid.svg");}
 
 .contact-info {margin-top:2em;}
 .contact-info p{margin-top: 1em;font-size: 1em;}
-.contact-info .icon a i{text-decoration: none;color:#f4594e;}
+.contact-info .icon a i{text-decoration: none;color:#3679b0;}
 .contact-info .icon a:hover i{color:black;}
 
-.contact-label{color:#999;font-size: 1.5em;font-family: 'Cabin', sans-serif;}
+.contact-label{color:#999;font-size: 1.5em;font-family: 'Open Sans', sans-serif;}
 
 
 /* Social Footer */
@@ -359,11 +360,11 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	
 	section{padding-top: 6.25em;padding-bottom: 3.75em;}
    section h1 {font-size:3.125em;}
-   section .intro p {font-size:1.5em;}
+   section .intro p {font-size:1.1em;}
 	
 	/* Header */
 	
-	#logo img{width:150px;}
+	#logo img{width:578px;}
 
 	#intro h1{margin-top: 1.25em;font-size: 3em;}
 	#intro h2{font-size: 2.5em;}
