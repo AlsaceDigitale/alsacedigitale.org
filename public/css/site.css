@@ -1,6 +1,15 @@
 .member p {
   margin-bottom: 1em;
 }
+section#whoarewe h1 {
+  color: #ffffff;
+}
+section#whoarewe a {
+  color: #ffffff;
+}
+section#whoarewe p {
+  color: #19304d !important;
+}
 section#plage h1 {
   color: #ffffff;
 }

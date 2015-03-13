@@ -48,10 +48,10 @@ jQuery(document).ready(function() {
 		/* Animation for Top Navigation */
 		var scrollTop = jQuery(window).scrollTop();
 		
-		if (scrollTop > jQuery('#team').offset().top-60 && animate == 'down') {
+		if (scrollTop > jQuery('#whoarewe').offset().top-60 && animate == 'down') {
 			animate='up';
 			jQuery('#top-bar').stop().animate({top:'0'}, 300);
-		} else if(scrollTop < jQuery('#team').offset().top-60 && animate == 'up'){
+		} else if(scrollTop < jQuery('#whoarewe').offset().top-60 && animate == 'up'){
 			animate='down';
 			jQuery('#top-bar').stop().animate({top:'-75px'}, 300);
 		}

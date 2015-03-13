@@ -17,7 +17,7 @@ block content
                                 img(id='img_logo', alt='logo', src='images/logo-AD-circular.png')
 
                             #explore
-                                a.scroll(href='#team')
+                                a.scroll(href='#whoarewe')
                                     i.icon-angle-down.icon-4x
 
             #top-bar
@@ -34,6 +34,8 @@ block content
                             nav#top-navigation
                                 ul.list-inline
                                     li
+                                        a(href='#whoarewe') PRESENTATION
+                                    li
                                         a(href='#team') L'EQUIPE
                                     li
                                         a(href='#plage') LA PLAGE
@@ -42,7 +44,31 @@ block content
                                     li
                                         a(href='#feed') SOCIAL
                                     li
+                                        a(href='http://inscription.alsacedigitale.org', target='_blank') ADHESION
+                                    li
                                         a(href='#contacts') CONTACT
+            section#whoarewe
+                .row
+                    .col-xs-12.col-sm-10.col-sm-offset-1.intro
+                        h1 QUI SOMMES-NOUS ?
+                        p.
+                            Alsace Digitale est une association ayant pour ambition d’animer et de promouvoir la révolution
+                            numérique dans la région Alsace. Soutenue par la <a href="http://www.strasbourg.eu">CUS</a>, elle a ouvert en avril 2012
+                            <a href="http://www.laplagedigitale.eu/">"La Plage Digitale"</a>, le premier espace de coworking de Strasbourg
+                            qui occupera, dès 2015, le deuxième étage du <a href="http://shadok.strasbourg.eu">Shadok</a>.
+                        p.
+                            C’est en partant d’un constat concret qu’Alsace Digitale est née : à l’heure actuelle, l’Alsace dispose
+                            d’une des plus grandes universités de France, d’écoles d’ingénieurs reconnues, d’une forte pénétration
+                            d’Internet, et pourtant l’écosystème d’entreprises de type “startup” est faible. Pourtant, des villes 
+                            comme Strasbourg disposent d’un environnement qui pourrait s’avérer propice au développement d’un tel 
+                            écosystème, surtout en s’appuyant sur des domaines d’excellence locaux comme les biotechs.
+                        p.
+                            Voilà l’origine de la création de l’association. Le but est clairement défini : développer du tissu
+                            économique, créer les conditions propices à l’émergence de nouvelles entreprises, celles 
+                            d’aujourd’hui qui seront les histoires à succès de demain. 
+                        p.
+                            Alsace Digitale ambitionne de construire un écosystème numérique Alsacien, avec son épicentre à 
+                            Strasbourg.
 
             section#team
                 .row
@@ -57,7 +83,8 @@ block content
                                 | d'accueillir toutes les bonnes volontés.
 
                 .container.row
-                    .col-xs-6.col-sm-6.col-md-3.member
+
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Stéphane -->
                         .member-photo
                             .image
                                 img(src='/images/team/stephane.jpg', alt='Stéphane Becker')
@@ -88,7 +115,37 @@ block content
                                 li
                                     a(href='http://www.linkedin.com/in/stephanebecker', target='_blank' )
                                         i.icon-envelope.icon-2x
-                    .col-xs-6.col-sm-6.col-md-3.member
+                    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Emmanuelle --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/emmanuelle.jpg', alt='Emmanuelle Ebel-Jost')
+                            .image-hover
+                                img(src='/images/team/emmanuelle.jpg', alt='Emmanuelle Ebel-Jost')
+                            .member-hover.hidden-xs.hidden-sm
+                                .list-container
+                                    ul.list-inline.social
+                                        li
+                                            a(href='http://www.linkedin.com/pub/emmanuelle-ebel/14/90/722')
+                                                i.icon-linkedin.icon-3x
+                                        li
+                                            a(href='http://www.adoc-metis.com')
+                                                i.icon-link.icon-3x
+                        h5 Emmanuelle Ebel-Jost
+                        p Vice-présidente "Arts et Culture numérique"
+                        .list-container.visible-xs.visible-sm
+                            ul.list-inline
+                                li
+                                    a
+                                        i.icon-facebook.icon-2x
+                                li
+                                    a
+                                        i.icon-twitter.icon-2x
+                                li
+                                    a
+                                        i.icon-envelope.icon-2x
+                    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Yann --> 
                         .member-photo
                             .image
                                 img(src='/images/team/yann.jpg', alt='Yann Klis')
@@ -107,7 +164,7 @@ block content
                                             a
                                                 i.icon-linkedin.icon-3x
                         h5 Yann Klis
-                        p Vice Président
+                        p Vice Président "Startups"
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
@@ -119,7 +176,8 @@ block content
                                 li
                                     a
                                         i.icon-linkedin.icon-2x
-                    .col-xs-6.col-sm-6.col-md-3.member
+                
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Sébastien --> 
                         .member-photo
                             .image
                                 img(src='/images/team/sebastien.jpg', alt='Sébastien Letélié')
@@ -138,7 +196,7 @@ block content
                                             a(href='http://linkedin.com/in/sebmade',target='_blank')
                                                 i.icon-linkedin.icon-3x
                         h5 Sébastien Letélié
-                        p Trésorier
+                        p Trésorier, VP "e-Health"
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
@@ -150,7 +208,42 @@ block content
                                 li
                                     a
                                         i.icon-linkedin.icon-2x
-                    .col-xs-6.col-sm-6.col-md-3.member
+
+                .container.row    
+                    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- David --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/you.jpg', alt='David Lichtlé')
+                            .image-hover
+                                img(src='/images/team/you.jpg', alt='David Lichtlé')
+                            .member-hover.hidden-xs.hidden-sm
+                                .list-container
+                                    ul.list-inline.social
+                                        li
+                                            a(href='http://facebook.com/sebmade',target='_blank')
+                                                i.icon-facebook.icon-3x
+                                        li
+                                            a(href='http://twitter.com/sebmade',target='_blank')
+                                                i.icon-twitter.icon-3x
+                                        li
+                                            a(href='http://linkedin.com/in/sebmade',target='_blank')
+                                                i.icon-linkedin.icon-3x
+                        h5 David Lichtlé
+                        p Trésorier-adjoint, VP "Alsace du Sud &amp; territoires lointains"
+                        .list-container.visible-xs.visible-sm
+                            ul.list-inline
+                                li
+                                    a
+                                        i.icon-facebook.icon-2x
+                                li
+                                    a
+                                        i.icon-twitter.icon-2x
+                                li
+                                    a
+                                        i.icon-linkedin.icon-2x
+                    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Yannick --> 
                         .member-photo
                             .image
                                 img(src='/images/team/yannick.jpg', alt='Yannick Jost')
@@ -169,7 +262,7 @@ block content
                                             a(href='http://www.linkedin.com/in/yannickjost')
                                                 i.icon-linkedin.icon-3x
                         h5 Yannick Jost
-                        p Secrétaire
+                        p Secrétaire, VP "Hacking &amp; DIY"
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
@@ -181,98 +274,8 @@ block content
                                 li
                                     a
                                         i.icon-linkedin.icon-2x
-                .container.row
-                    .col-xs-6.col-sm-6.col-md-3.member
-                        .member-photo
-                            .image
-                                img(src='/images/team/emmanuelle.jpg', alt='Emmanuelle Ebel-Jost')
-                            .image-hover
-                                img(src='/images/team/emmanuelle.jpg', alt='Emmanuelle Ebel-Jost')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='http://www.linkedin.com/pub/emmanuelle-ebel/14/90/722')
-                                                i.icon-linkedin.icon-3x
-                                        li
-                                            a(href='http://www.adoc-metis.com')
-                                                i.icon-link.icon-3x
-                        h5 Emmanuelle Ebel-Jost
-                        p Assesseur
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
-                                        i.icon-envelope.icon-2x
-                    .col-xs-6.col-sm-6.col-md-3.member
-                        .member-photo
-                            .image
-                                img(src='/images/team/pascal.jpg', alt='Pascal Bastien')
-                            .image-hover
-                                img(src='/images/team/pascal.jpg', alt='Pascal Bastien')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
-                                                i.icon-linkedin.icon-3x
-                        h5 Pascal Bastien
-                        p Vice-président, Coach
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
-                                        i.icon-linkedin.icon-2x
-                    .col-xs-6.col-sm-6.col-md-3.member
-                        .member-photo
-                            .image
-                                img(src='/images/team/sandrine.jpg', alt='Sandrine Hilaire')
-                            .image-hover
-                                img(src='/images/team/sandrine.jpg', alt='Sandrine Hilaire')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
-                                                i.icon-linkedin.icon-3x
-                        h5 Sandrine Hilaire
-                        p Chargée de projets
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
-                                        i.icon-linkedin.icon-2x
-                    .col-xs-6.col-sm-6.col-md-3.member
+
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Caroline --> 
                         .member-photo
                             .image
                                 img(src='/images/team/caroline.jpg', alt='Caroline Boehrer')
@@ -303,8 +306,8 @@ block content
                                 li
                                     a
                                         i.icon-linkedin.icon-2x
-                .container.row
-                    .col-xs-6.col-sm-6.col-md-3.member
+                    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Jérémy --> 
                         .member-photo
                             .image
                                 img(src='/images/team/jeremy.jpg', alt='Jérémy Kieger')
@@ -323,7 +326,7 @@ block content
                                             a
                                                 i.icon-linkedin.icon-3x
                         h5 Jérémy Kieger
-                        p Assesseur
+                        p Administrateur
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
@@ -335,12 +338,15 @@ block content
                                 li
                                     a
                                         i.icon-envelope.icon-2x
-                    .col-xs-6.col-sm-6.col-md-3.member
+
+                .container.row    
+                    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Pascal --> 
                         .member-photo
                             .image
-                                img(src='/images/team/kevin.jpg', alt='Kevin Soltysiak')
+                                img(src='/images/team/pascal.jpg', alt='Pascal Bastien')
                             .image-hover
-                                img(src='/images/team/kevin.jpg', alt='Kevin Soltysiak')
+                                img(src='/images/team/pascal.jpg', alt='Pascal Bastien')
                             .member-hover.hidden-xs.hidden-sm
                                 .list-container
                                     ul.list-inline.social
@@ -353,19 +359,116 @@ block content
                                         li
                                             a
                                                 i.icon-linkedin.icon-3x
-                        h5 Kevin Soltysiak
-                        p Assesseur
+                        h5 Pascal Bastien
+                        p Coach &amp; Team Sherpa
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a(href='http://facebook.com/soltysiak.kevin')
+                                    a
                                         i.icon-facebook.icon-2x
                                 li
-                                    a(href='https://twitter.com/ksol')
+                                    a
                                         i.icon-twitter.icon-2x
                                 li
-                                    a(href='http://www.linkedin.com/in/ksoltysiak')
+                                    a
                                         i.icon-linkedin.icon-2x
+
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Nicolas --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/you.jpg', alt='Nicolas Griselle')
+                            .image-hover
+                                img(src='/images/team/you.jpg', alt='Nicolas Griselle')
+                            .member-hover.hidden-xs.hidden-sm
+                                .list-container
+                                    ul.list-inline.social
+                                        li
+                                            a
+                                                i.icon-facebook.icon-3x
+                                        li
+                                            a
+                                                i.icon-twitter.icon-3x
+                                        li
+                                            a
+                                                i.icon-linkedin.icon-3x
+                        h5 Nicolas Griselle
+                        p Organisateur Startup Week-End Strasbourg
+                        .list-container.visible-xs.visible-sm
+                            ul.list-inline
+                                li
+                                    a
+                                        i.icon-facebook.icon-2x
+                                li
+                                    a
+                                        i.icon-twitter.icon-2x
+                                li
+                                    a
+                                        i.icon-linkedin.icon-2x
+                    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Catherine --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/you.jpg', alt='Jérémy Kieger')
+                            .image-hover
+                                img(src='/images/team/you.jpg', alt='Jérémy Kieger')
+                            .member-hover.hidden-xs.hidden-sm
+                                .list-container
+                                    ul.list-inline.social
+                                        li
+                                            a
+                                                i.icon-facebook.icon-3x
+                                        li
+                                            a
+                                                i.icon-twitter.icon-3x
+                                        li
+                                            a
+                                                i.icon-linkedin.icon-3x
+                        h5 Catherine Mosser
+                        p Coordinatrice de Projets
+                        .list-container.visible-xs.visible-sm
+                            ul.list-inline
+                                li
+                                    a
+                                        i.icon-facebook.icon-2x
+                                li
+                                    a
+                                        i.icon-twitter.icon-2x
+                                li
+                                    a
+                                        i.icon-envelope.icon-2x
+                    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Sophie --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/you.jpg', alt='Pascal Bastien')
+                            .image-hover
+                                img(src='/images/team/you.jpg', alt='Pascal Bastien')
+                            .member-hover.hidden-xs.hidden-sm
+                                .list-container
+                                    ul.list-inline.social
+                                        li
+                                            a
+                                                i.icon-facebook.icon-3x
+                                        li
+                                            a
+                                                i.icon-twitter.icon-3x
+                                        li
+                                            a
+                                                i.icon-linkedin.icon-3x
+                        h5 Sophie Charpentier
+                        p Chargée d'espace de coworking
+                        .list-container.visible-xs.visible-sm
+                            ul.list-inline
+                                li
+                                    a
+                                        i.icon-facebook.icon-2x
+                                li
+                                    a
+                                        i.icon-twitter.icon-2x
+                                li
+                                    a
+                                        i.icon-linkedin.icon-2x
+            
             section#plage
                 .row
                     .col-xs-12.col-sm-6.col-sm-offset-3.intro
