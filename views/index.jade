@@ -34,21 +34,17 @@ block content
                             nav#top-navigation
                                 ul.list-inline
                                     li
-                                        a(href='http://inscription.alsacedigitale.org') ADHERER
+                                        a(href='#whoarewe') L'ASSOCIATION
                                     li
-                                        a(href='#team') L'EQUIPE
-                                    li
-                                        a(href='#team') TEAM
-                                    li
-                                        a(href='#plage') PLAGE
+                                        a(href='#plage') COWORKING
                                     li
                                         a(href='#works') EVENEMENTS
                                     li
-                                        a(href='#feed') SOCIAL
-                                    li
-                                        a(href='http://inscription.alsacedigitale.org', target='_blank') ADHESION
+                                        a(href='#team') L'EQUIPE
                                     li
                                         a(href='#contacts') CONTACT
+                                    li
+                                        a(href='http://inscription.alsacedigitale.org', target='_blank') ADHÉRER
             section#whoarewe
                 .row
                     .col-xs-12.col-sm-10.col-sm-offset-1.intro
@@ -71,6 +67,116 @@ block content
                         p.
                             Alsace Digitale ambitionne de construire un écosystème numérique Alsacien, avec son épicentre à 
                             Strasbourg.
+
+            section#plage
+                .row
+                    .col-xs-12.col-sm-6.col-sm-offset-3.intro
+                        h1 COWORKING À STRASBOURG.
+                        p
+                            a(href="http://www.laplagedigitale.eu/") La Plage Digitale
+                            |, ce sont deux espaces de coworking situé à Strasbourg (15 avenue du Rhin et 26 rue du bassin d'Austerlitz), chaque lieu peut
+                            | accueillir une trentaine de personnes dans une ambiance de travail conviviale.
+                            | Ces espaces servent aussi de point d'ancrage pour de nombreux évènements d'Alsace Digitale.
+
+                .studio
+                    .row
+                        .col-xs-12
+                            #swiper.swiper-container
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        img(src='/images/plage/la_plage_1.jpg', alt='la plage 1')
+                                    .swiper-slide
+                                        img(src='/images/plage/la_plage_2.jpg', alt='la plage 2')
+                                    .swiper-slide
+                                        img(src='/images/plage/la_plage_3.jpg', alt='la plage 3')
+                                    .swiper-slide
+                                        img(src='/images/plage/la_plage_4.jpg', alt='la plage 3')
+                                    .swiper-slide
+                                        img(src='/images/plage/la_plage_5.jpg', alt='la plage 3')
+
+            section#works
+                .row
+                    .col-xs-12.col-sm-6.col-sm-offset-3.intro
+                        h1 LES EVENEMENTS
+                        p
+
+                #w-filter.row
+                    .col-xs-12
+                        #work-filter.center-list
+                            ul.list-inline.hidden-xs
+                                li.filter.active(data-filter='all') tous
+                                li.filter(data-filter='communaute') communauté
+                                li.filter(data-filter='entreprenariat') entreprenariat
+                                li.filter(data-filter='culture') culture
+                                li.filter(data-filter='hacking') hacking
+                #work-container.container.row
+                    .col-xs-12.col-sm-4.mix.all.culture
+                        #work-1.work
+                            img(src='/images/event/edgefest2.jpg', alt='work')
+                            .work-info
+                                h6 Edgefest
+                    .col-xs-12.col-sm-4.mix.all.entreprenariat
+                        #work-2.work
+                            img(src='/images/event/startup-weekend.jpg', alt='work')
+                            .work-info
+                                h6 Startup Weekend
+                    .col-xs-12.col-sm-4.end.mix.all.culture
+                        #work-3.work
+                            img(src='/images/event/hic.jpg', alt='work')
+                            .work-info
+                                h6 Hacking Industry Camp
+                    .col-xs-12.col-sm-4.mix.all.hacking.communaute
+                        #work-4.work
+                            img(src='/images/event/hack-sxb.jpg', alt='work')
+                            .work-info
+                                h6 HackSXB
+                    .col-xs-12.col-sm-4.mix.all.entreprenariat.communaute
+                        #work-5.work
+                            img(src='/images/event/demonight.jpg', alt='work')
+                            .work-info
+                                h6 Strasbourg Startups
+                    .col-xs-12.col-sm-4.mix.all.hacking
+                        #work-6.work
+                            img(src='/images/event/devoxx.jpg', alt='work')
+                            .work-info
+                                h6 Initiation au code
+                    .col-xs-12.col-sm-4.end.mix.all.hacking
+                        #work-7.work
+                            img(src='/images/event/hh-logo.png', alt='work')
+                            .work-info
+                                h6 Hacking Health Camp
+                    .col-xs-12.col-sm-4.mix.all.culture
+                        #work-8.work
+                            img(src='/images/event/barcamp.jpg', alt='work')
+                            .work-info
+                                h6 Barcamp Alsace
+                    .col-xs-12.col-sm-4.mix.all.hacking
+                        #work-9.work
+                            img(src='/images/event/global-game-jam.jpg', alt='work')
+                            .work-info
+                                h6 Global Game Jam
+
+            section#feed
+                .row
+                    .col-xs-12.col-sm-6.col-sm-offset-3.intro
+                        h2 SOCIAL FEEDER.
+                        p L'ubiquité numérique.
+                .row
+                    .col-xs-12.col-sm-12
+                        ul#social-feed.centerUl
+                            li#flickr-feed.active
+                                a
+                                    i.icon-flickr.icon-4x
+                            li#instagram-feed
+                                a
+                                    i.icon-instagram.icon-4x
+                            li#twitter-feed
+                                a
+                                    i.icon-twitter.icon-4x
+
+                #flickr.row.feed
+                #instagram.row.feed
+                #twitter.row.feed
 
             section#team
                 .row
@@ -470,116 +576,6 @@ block content
                                 li
                                     a
                                         i.icon-envelope.icon-2x
-
-            section#plage
-                .row
-                    .col-xs-12.col-sm-6.col-sm-offset-3.intro
-                        h1 LA PLAGE DIGITALE.
-                        p
-                            a(href="http://www.laplagedigitale.eu/") La Plage Digitale
-                            | &nbsp;est un espace de coworking situé à Strasbourg,
-                            | il peut accueillir une trentaine de personnes dans une ambiance de travail conviviale.
-                            | L'espace sert aussi de point d'ancrage pour de nombreux évènements d'Alsace Digitale.
-
-                .studio
-                    .row
-                        .col-xs-12
-                            #swiper.swiper-container
-                                .swiper-wrapper
-                                    .swiper-slide
-                                        img(src='/images/plage/la_plage_1.jpg', alt='la plage 1')
-                                    .swiper-slide
-                                        img(src='/images/plage/la_plage_2.jpg', alt='la plage 2')
-                                    .swiper-slide
-                                        img(src='/images/plage/la_plage_3.jpg', alt='la plage 3')
-                                    .swiper-slide
-                                        img(src='/images/plage/la_plage_4.jpg', alt='la plage 3')
-                                    .swiper-slide
-                                        img(src='/images/plage/la_plage_5.jpg', alt='la plage 3')
-
-            section#works
-                .row
-                    .col-xs-12.col-sm-6.col-sm-offset-3.intro
-                        h1 LES EVENEMENTS
-                        p
-
-                #w-filter.row
-                    .col-xs-12
-                        #work-filter.center-list
-                            ul.list-inline.hidden-xs
-                                li.filter.active(data-filter='all') tous
-                                li.filter(data-filter='communaute') communauté
-                                li.filter(data-filter='entreprenariat') entreprenariat
-                                li.filter(data-filter='culture') culture
-                                li.filter(data-filter='hacking') hacking
-                #work-container.container.row
-                    .col-xs-12.col-sm-4.mix.all.culture
-                        #work-1.work
-                            img(src='/images/event/edgefest2.jpg', alt='work')
-                            .work-info
-                                h6 Edgefest
-                    .col-xs-12.col-sm-4.mix.all.entreprenariat
-                        #work-2.work
-                            img(src='/images/event/startup-weekend.jpg', alt='work')
-                            .work-info
-                                h6 Startup Weekend
-                    .col-xs-12.col-sm-4.end.mix.all.culture
-                        #work-3.work
-                            img(src='/images/event/hic.jpg', alt='work')
-                            .work-info
-                                h6 Hacking Industry Camp
-                    .col-xs-12.col-sm-4.mix.all.hacking.communaute
-                        #work-4.work
-                            img(src='/images/event/hack-sxb.jpg', alt='work')
-                            .work-info
-                                h6 HackSXB
-                    .col-xs-12.col-sm-4.mix.all.entreprenariat.communaute
-                        #work-5.work
-                            img(src='/images/event/demonight.jpg', alt='work')
-                            .work-info
-                                h6 Strasbourg Startups
-                    .col-xs-12.col-sm-4.mix.all.hacking
-                        #work-6.work
-                            img(src='/images/event/devoxx.jpg', alt='work')
-                            .work-info
-                                h6 Initiation au code
-                    .col-xs-12.col-sm-4.end.mix.all.hacking
-                        #work-7.work
-                            img(src='/images/event/hh-logo.png', alt='work')
-                            .work-info
-                                h6 Hacking Health Camp
-                    .col-xs-12.col-sm-4.mix.all.culture
-                        #work-8.work
-                            img(src='/images/event/barcamp.jpg', alt='work')
-                            .work-info
-                                h6 Barcamp Alsace
-                    .col-xs-12.col-sm-4.mix.all.hacking
-                        #work-9.work
-                            img(src='/images/event/global-game-jam.jpg', alt='work')
-                            .work-info
-                                h6 Global Game Jam
-
-            section#feed
-                .row
-                    .col-xs-12.col-sm-6.col-sm-offset-3.intro
-                        h2 SOCIAL FEEDER.
-                        p L'ubiquité numérique.
-                .row
-                    .col-xs-12.col-sm-12
-                        ul#social-feed.centerUl
-                            li#flickr-feed.active
-                                a
-                                    i.icon-flickr.icon-4x
-                            li#instagram-feed
-                                a
-                                    i.icon-instagram.icon-4x
-                            li#twitter-feed
-                                a
-                                    i.icon-twitter.icon-4x
-
-                #flickr.row.feed
-                #instagram.row.feed
-                #twitter.row.feed
 
             section#contacts
                 .row
