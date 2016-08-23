@@ -18,16 +18,16 @@ exports.showWork = function( req, res ) {
             res.render( 'startup-weekend');
             break;
         case 3:
-            res.render( 'hack-the-culture');
+            res.render( 'hacking-industry-camp');
             break;
         case 4:
             res.render( 'hacksxb');
             break;
         case 5:
-            res.render( 'demonight');
+            res.render( 'strasbourg-startups');
             break;
         case 6:
-            res.render( 'devoxx4kids');
+            res.render( 'initiation-au-code');
             break;
         case 7:
             res.render( 'digitalhealthcamp');
@@ -36,7 +36,7 @@ exports.showWork = function( req, res ) {
             res.render( 'barcamp-alsace');
             break;
         case 9:
-            res.render( 'hack-le-chalet');
+            res.render( 'global-game-jam');
             break;
     }
 }
