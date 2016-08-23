@@ -159,24 +159,19 @@ block content
             section#feed
                 .row
                     .col-xs-12.col-sm-6.col-sm-offset-3.intro
-                        h2 SOCIAL FEEDER.
-                        p L'ubiquité numérique.
+                        h2 L'ACTUALITÉ
+                        p Suivez l'actualité de l'association sur les réseaux sociaux
                 .row
-                    .col-xs-12.col-sm-12
-                        ul#social-feed.centerUl
-                            li#flickr-feed.active
-                                a
-                                    i.icon-flickr.icon-4x
-                            li#instagram-feed
-                                a
-                                    i.icon-instagram.icon-4x
-                            li#twitter-feed
-                                a
-                                    i.icon-twitter.icon-4x
+                    .col-md-6.feed-left
+                        .fb-page(data-href='https://www.facebook.com/alsace.digitale/', data-tabs='timeline', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-width='500')
+                            blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/alsace.digitale/')
+                                a(href='https://www.faceook.com/alsace.digitale/') Alsace Digitale
+                    .col-md-6.feed-right
+                        a.twitter-timeline(data-lang='fr', data-width='500' data-height='500', href='https://twitter.com/AlsaceDigitale', data-theme='light') Tweets de AlsaceDigitale
+                        script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
 
-                #flickr.row.feed
-                #instagram.row.feed
-                #twitter.row.feed
+
+                        
 
             section#team
                 .row

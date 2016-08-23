@@ -243,6 +243,13 @@ section#plage{padding-bottom: 0;overflow:hidden;}
 #feed ul li.active i{text-decoration:none;color:black;}
 #feed ul li:not(.active) i{text-decoration:none;color:black; opacity:0.5;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
 #feed ul li:hover i{text-decoration:none;opacity:1;}
+#feed .feed-left {text-align: right;margin: 20px 0;}
+#feed .feed-right {text-align: left;margin: 20px 0;}
+
+@media (max-width: 1100px) {
+  #feed .feed-left {width: 100%!important;text-align: center;}
+  #feed .feed-right {width: 100%!important;text-align: center;}
+}
 
 #twitter{position: relative; overflow-y: hidden;height: 22em;margin-bottom: 2em;}
 #instagram, #twitter{display:none;overflow:hidden;}
