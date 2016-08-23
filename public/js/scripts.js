@@ -3,7 +3,7 @@
 /*-----------------------------------------------------------------------------------*/
 
 /* Starting Animation on Load */
-$('<img/>').attr('src', '/images/plage.jpg').load(function() {
+$('<img/>').attr('src', '/images/background.jpg').load(function() {
 	jQuery('#logo').fadeIn(600, function() {
 		jQuery('h1').animate({opacity: '1', 'padding-top': '0'}, 500,function() {
 			jQuery('h2').animate({opacity: '1', 'padding-top': '0'}, 500,function() {
@@ -17,8 +17,6 @@ $('<img/>').attr('src', '/images/plage.jpg').load(function() {
 	});
 });
 
-textCenter();
-
 function textCenter()
 {
 	$('.text-container').css({
@@ -26,7 +24,6 @@ function textCenter()
     });
 
     $('.text-container').css({
-
         left: ($(window).width() - $('#logo').outerWidth())/2,
         top: ($(window).height() - $('#logo').outerHeight())/2
 
@@ -39,7 +36,7 @@ jQuery(document).ready(function() {
 	/*-----------------------------------------------------------------------------------*/
 	/*	Navigation
 	/*-----------------------------------------------------------------------------------*/
-    textCenter();
+	setTimeout(textCenter, 0);
 
 	var animate='down';
 	
