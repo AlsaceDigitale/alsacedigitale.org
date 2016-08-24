@@ -121,6 +121,9 @@ section{padding-top: 3.125em;padding-bottom: 1.875em;text-align: center;}
    Team Styles
    ========================================================================== */
 
+#team .intro{margin-bottom:0.5em;}
+#team .team-title {margin-top: 1.5em;margin-bottom: 0.8em;font-size: 1.5em;}
+
 .member{margin-bottom: 2em;min-height: 230px;}
 .member:last-child{margin-bottom: 0em;}
 .member h5{margin-top: 1em;margin-bottom: 0;font-size: 1.125em;}
@@ -130,6 +133,7 @@ section{padding-top: 3.125em;padding-bottom: 1.875em;text-align: center;}
 .member-photo img{width: 100%;display:block;margin: 0 auto;}
 
 .member-hover{position: absolute;top: 0;right: 0;width: 100%;height: 100%;background-color: rgb(63,142,204);background-color: rgba(63,142,204,0);-webkit-transition: background-color 0.4s ease-in-out;-moz-transition: background-color 0.4s ease-in-out;-o-transition: background-color 0.4s ease-in-out;transition: background-color 0.4s ease-in-out;}
+
 
 /* Social List */
 
@@ -398,7 +402,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	#top-navigation li{width:inherit;}
 	
 	/* Team */
-	
+	 #team .team-title {font-size: 2em;}
 	.member{margin-bottom: 0;min-height: inherit;}
 	.member h5{font-size: 1.3125em;}
 	.member p{font-size: 1em;}
