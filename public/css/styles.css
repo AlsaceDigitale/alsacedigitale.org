@@ -338,7 +338,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 
 #next-project{background-image: url('../images/works/arrow-right.svg');}
 #previous-project{background-image: url('../images/works/arrow-left.svg');}
-/*#close-project{margin: 0 auto;background-image: url('../images/works/close-project.svg');}*/
+#close-project{margin: 0 auto;background-image: url('../images/works/close-project.svg');}
 
 #project h2{margin-top: 0;}
 
@@ -444,7 +444,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	
   #next-project, #previous-project, #close-project{opacity:0.6;-webkit-transition: opacity 0.3s ease-in-out;-moz-transition: opacity 0.3s ease-in-out;-o-transition: opacity 0.3s ease-in-out;transition: opacity 0.3s ease-in-out;}
   #next-project:hover,#previous-project:hover,#close-project:hover{opacity:1;}
-  #close-project{opacity: 0.8;}
+  #close-project{opacity: 0.8;background-image: none;}
   #close-project::after{content:"Retour"; position: absolute; display:block; background: #f4594e; color: #fff; padding: 15px; padding-top: 12px; font-size: 2em;}
 	
 
