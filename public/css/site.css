@@ -16,6 +16,16 @@ section#plage p {
 section#works h1 {
   color: #ffffff;
 }
+section#works h2 {
+  color: #ffffff;
+  font-weight: normal;
+}
+section#works #mc_embed_signup {
+  color: #ffffff;
+}
+section#works #mc_embed_signup #mce-success-response {
+  color: #ffffff!important;
+}
 section#works p {
   color: #222222;
 }

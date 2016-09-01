@@ -134,7 +134,17 @@ jQuery(document).ready(function() {
 	    
 	    event.preventDefault();
 	});
-	
+
+	/*
+	 MAILCHIMP
+	*/
+	$('#newsletter').hide();
+	$('#newsletter-trigger').click(function(e) {
+		$(this).hide();
+		$('#newsletter').slideDown();
+	});
+
+		
 	/*-----------------------------------------------------------------------------------*/
 	/*	Studio
 	/*-----------------------------------------------------------------------------------*/

@@ -108,6 +108,64 @@ block content
                         h1 LES EVENEMENTS
                         p
 
+                        #mc_embed_signup
+                          form#mc-embedded-subscribe-form.validate(action='//alsacedigitale.us5.list-manage.com/subscribe/post?u=d0f86161d0d69c890bbf3755a&id=f26e2c043e', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+                            #mc_embed_signup_scroll
+                              h2.text-center Tenez-vous informé(e) des prochains événements en vous inscrivant à la newsletter d'Alsace Digitale
+                              p.text-center
+                                a.btn.btn-default#newsletter-trigger Inscription à la newsletter 
+                              #newsletter
+                                  .indicates-required
+                                    span.asterisk *
+                                    |  champ requis
+                                  .mc-field-group
+                                    label(for='mce-EMAIL')
+                                      | Adresse email  
+                                      span.asterisk *
+                                    input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
+                                  .mc-field-group
+                                    label(for='mce-FNAME')
+                                      | Prénom  
+                                      span.asterisk *
+                                    input#mce-FNAME.required(type='text', value='', name='FNAME')
+                                  .mc-field-group
+                                    label(for='mce-LNAME')
+                                      | Nom  
+                                      span.asterisk *
+                                    input#mce-LNAME.required(type='text', value='', name='LNAME')
+                                  .mc-field-group
+                                    label(for='mce-MMERGE5') Site web 
+                                    input#mce-MMERGE5(type='text', value='', name='MMERGE5')
+                                  .mc-field-group
+                                    label(for='mce-MMERGE6') Entreprise 
+                                    input#mce-MMERGE6(type='text', value='', name='MMERGE6')
+                                  .mc-field-group
+                                    label(for='mce-MMERGE8')
+                                      | Ville  
+                                      span.asterisk *
+                                    input#mce-MMERGE8.required(type='text', value='', name='MMERGE8')
+                                  .mc-field-group
+                                    label(for='mce-MMERGE11') Téléphone portable 
+                                    input#mce-MMERGE11(type='text', value='', name='MMERGE11')
+                                  .mc-field-group.input-group
+                                    strong Format des emails
+                                    ul
+                                      li
+                                        input#mce-EMAILTYPE-0(type='radio', value='html', name='EMAILTYPE', checked='checked')
+                                        label(for='mce-EMAILTYPE-0') HTML (recommandé)
+                                      li
+                                        input#mce-EMAILTYPE-1(type='radio', value='text', name='EMAILTYPE')
+                                        label(for='mce-EMAILTYPE-1') Texte
+                                  #mce-responses.clear
+                                    #mce-error-response.response(style='display:none')
+                                    #mce-success-response.response(style='display:none')
+                                  // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                                  div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                                    input(type='text', name='b_d0f86161d0d69c890bbf3755a_f26e2c043e', tabindex='-1', value='')
+                                  .clear
+                                    input#mc-embedded-subscribe.button(type='submit', value='Valider', name='subscribe')
+
+
                 #w-filter.row
                     .col-xs-12
                         #work-filter.center-list
@@ -207,26 +265,14 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
+                                            a(href='https://www.linkedin.com/in/pascal-bastien-8b6b563')
                                                 i.icon-linkedin.icon-3x
                         h5 Pascal Bastien
                         p Coach &amp; Team Sherpa
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
+                                    a(href='https://www.linkedin.com/in/pascal-bastien-8b6b563')
                                         i.icon-linkedin.icon-2x
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Stéphane Becker -->
@@ -281,14 +327,11 @@ block content
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
-                                        i.icon-facebook.icon-2x
+                                    a(href='http://www.linkedin.com/pub/emmanuelle-ebel/14/90/722')
+                                        i.icon-linkedin.icon-2x
                                 li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
-                                        i.icon-envelope.icon-2x
+                                    a(href='http://www.adoc-metis.com')
+                                        i.icon-link.icon-2x
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Florian Fries --> 
                         .member-photo
@@ -334,27 +377,21 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
+                                            a(href='https://fr.linkedin.com/in/nicolasgriselle/')
                                                 i.icon-linkedin.icon-3x
+                                        li
+                                            a(href='https://www.facebook.com/nicolas.griselle')
+                                                i.icon-facebook.icon-3x
                         h5 Nicolas Griselle
                         p Organisateur Startup Week-End Strasbourg
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
+                                    a(href='https://fr.linkedin.com/in/nicolasgriselle/')
                                         i.icon-linkedin.icon-2x
+                                li
+                                    a(href='https://www.facebook.com/nicolas.griselle')
+                                        i.icon-facebook.icon-2x
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Elodie Heitz --> 
                         .member-photo
@@ -410,13 +447,13 @@ block content
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
+                                    a(href='http://facebook.com/yannick.jost')
                                         i.icon-facebook.icon-2x
                                 li
-                                    a
+                                    a(href='http://twitter.com/yanjost')
                                         i.icon-twitter.icon-2x
                                 li
-                                    a
+                                    a(href='http://www.linkedin.com/in/yannickjost')
                                         i.icon-linkedin.icon-2x
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Jérémy Kieger --> 
@@ -429,29 +466,21 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
-                                                i.icon-facebook.icon-3x
+                                            a(href='http://goodmorningmajor.com/')
+                                                i.icon-link.icon-3x
                                         li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
+                                            a(href='https://www.linkedin.com/in/j%C3%A9r%C3%A9my-kieger-765a6555')
                                                 i.icon-linkedin.icon-3x
                         h5 Jérémy Kieger
                         p Communication
                         .list-container.visible-xs.visible-sm
-                            ul.list-inline
+                            ul.list-inline                                
                                 li
-                                    a
-                                        i.icon-facebook.icon-2x
+                                    a(href='http://goodmorningmajor.com/')
+                                        i.icon-link.icon-2x
                                 li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
-                                        i.icon-envelope.icon-2x
-
-                    .col-xs-6.col-sm-6.col-md-3
+                                    a(href='https://www.linkedin.com/in/j%C3%A9r%C3%A9my-kieger-765a6555')
+                                        i.icon-linkedin.icon-2x
                 
                 .container.row
                     
@@ -465,26 +494,26 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
+                                            a(href='https://www.facebook.com/yannski')
                                                 i.icon-facebook.icon-3x
                                         li
-                                            a
+                                            a(href='https://twitter.com/yannski')
                                                 i.icon-twitter.icon-3x
                                         li
-                                            a
+                                            a(href='https://www.linkedin.com/in/yannklis')
                                                 i.icon-linkedin.icon-3x
                         h5 Yann Klis
                         p Vice Président "Startups"
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
+                                    a(href='https://www.facebook.com/yannski')
                                         i.icon-facebook.icon-2x
                                 li
-                                    a
+                                    a(href='https://twitter.com/yannski')
                                         i.icon-twitter.icon-2x
                                 li
-                                    a
+                                    a(href='https://www.linkedin.com/in/yannklis')
                                         i.icon-linkedin.icon-2x
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- David Lichtlé --> 
@@ -499,25 +528,13 @@ block content
                                         li
                                             a(href='http://facebook.com/dlichtle',target='_blank')
                                                 i.icon-facebook.icon-3x
-                                        //- li
-                                        //-     a(href='http://twitter.com/sebmade',target='_blank')
-                                        //-         i.icon-twitter.icon-3x
-                                        //- li
-                                        //-     a(href='http://linkedin.com/in/sebmade',target='_blank')
-                                        //-         i.icon-linkedin.icon-3x
                         h5 David Lichtlé
                         p VP "Alsace du Sud"
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
+                                    a(href='http://facebook.com/dlichtle',target='_blank')
                                         i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
-                                        i.icon-linkedin.icon-2x
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Léo Unbekandt --> 
                         .member-photo
@@ -529,26 +546,26 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
+                                            a(href='https://www.facebook.com/leo.nalpskc/')
                                                 i.icon-facebook.icon-3x
                                         li
-                                            a
+                                            a(href='https://twitter.com/Soulou')
                                                 i.icon-twitter.icon-3x
                                         li
-                                            a
+                                            a(href='https://fr.linkedin.com/in/leounbekandt/')
                                                 i.icon-linkedin.icon-3x
                         h5 Léo Unbekandt
                         p Assesseur
                         .list-container.visible-xs.visible-sm
-                            ul.list-inline
+                            ul.list-inline                                
                                 li
-                                    a
+                                    a(href='https://www.facebook.com/leo.nalpskc/')
                                         i.icon-facebook.icon-2x
                                 li
-                                    a
+                                    a(href='https://twitter.com/Soulou')
                                         i.icon-twitter.icon-2x
                                 li
-                                    a
+                                    a(href='https://fr.linkedin.com/in/leounbekandt/')
                                         i.icon-linkedin.icon-2x
 
                 .container.row
@@ -565,27 +582,15 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
-                                                i.icon-linkedin.icon-3x
+                                            a(href='mailto:sophie.charpentier@alsacedigitale.org')
+                                                i.icon-envelope.icon-3x
                         h5 Sophie Charpentier
                         p Chargée d'espace de coworking
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
-                                        i.icon-linkedin.icon-2x
+                                    a(href='mailto:sophie.charpentier@alsacedigitale.org')
+                                        i.icon-envelope.icon-2x
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Catherine Mosser --> 
                         .member-photo
@@ -597,26 +602,14 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
-                                                i.icon-linkedin.icon-3x
+                                            a(href='mailto:catherine.mosser@alsacedigitale.org')
+                                                i.icon-envelope.icon-3x
                         h5 Catherine Mosser
                         p Coordinatrice de Projets
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
+                                    a(href='mailto:catherine.mosser@alsacedigitale.org')
                                         i.icon-envelope.icon-2x
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Mathias Bragagia --> 
@@ -629,26 +622,14 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
-                                                i.icon-linkedin.icon-3x
+                                            a(href='mailto:codingclub@alsacedigitale.org')
+                                                i.icon-envelope.icon-3x
                         h5 Mathias Bragagia
                         p Service civique
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
+                                    a(href='mailto:codingclub@alsacedigitale.org')
                                         i.icon-envelope.icon-2x
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Joan Saum --> 
@@ -661,26 +642,14 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
-                                                i.icon-linkedin.icon-3x
+                                            a(href='mailto:codingclub@alsacedigitale.org')
+                                                i.icon-envelope.icon-3x
                         h5 Joan Saum
                         p Service civique
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
+                                    a(href='mailto:codingclub@alsacedigitale.org')
                                         i.icon-envelope.icon-2x
 
                 .container.row
@@ -695,26 +664,14 @@ block content
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a
-                                                i.icon-linkedin.icon-3x
+                                            a(href='mailto:codingclub@alsacedigitale.org')
+                                                i.icon-envelope.icon-3x
                         h5 Guillaume Scholesser
                         p Service civique
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a
+                                    a(href='mailto:codingclub@alsacedigitale.org')
                                         i.icon-envelope.icon-2x
 
             section#contacts
