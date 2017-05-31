@@ -3,12 +3,6 @@ extends layout
 block content
     body.pictured
         #page
-            a(href='https://github.com/alsacedigitale/alsacedigitale.org')
-                img(style="position: absolute; top: 0; right: 0; border: 0;",
-                    src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67",
-                    alt="Fork me on GitHub",
-                    data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png")
-
             header#header.smooth
                 .row
                     .col-xs-12
@@ -105,7 +99,7 @@ block content
             section#works
                 .row
                     .col-xs-12.col-sm-6.col-sm-offset-3.intro
-                        h1 LES EVENEMENTS
+                        h1 LES ÉVÉNEMENTS & LES COMMUNAUTÉS
                         p
 
                         #mc_embed_signup
@@ -171,8 +165,8 @@ block content
                         #work-filter.center-list
                             ul.list-inline.hidden-xs
                                 li.filter.active(data-filter='all') tous
-                                li.filter(data-filter='communaute') communauté
-                                li.filter(data-filter='entreprenariat') entreprenariat
+                                li.filter(data-filter='communaute') communautés
+                                li.filter(data-filter='entreprenariat') entrepreneuriat
                                 li.filter(data-filter='culture') culture
                                 li.filter(data-filter='hacking') hacking
                 #work-container.container.row
@@ -248,7 +242,7 @@ block content
                             pour animer le tissu économique local. Nos actions sont possibles grâce à l'implication
                             de nos bénévoles.
                         p   A ce titre, nous avons toujours à coeur&nbsp;
-                            a(href="http://inscription.alsacedigitale.org/")
+                            a(href="http://inscription.alsacedigitale.org/" target="_blank")
                                 | d'accueillir toutes les bonnes volontés.
 
                 .container.row
@@ -630,77 +624,58 @@ block content
                                     a(href='mailto:catherine.mosser@alsacedigitale.org',target='_blank')
                                         i.icon-envelope.icon-2x
 
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Mathias Bragagia --> 
+
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Julien Saint-Jean --> 
                         .member-photo
                             .image
-                                img(src='/images/team/mathias.jpg', alt='Mathias Bragagia')
+                                img(src='/images/team/julien.jpg', alt='Julien Saint-Jean')
                             .image-hover
-                                img(src='/images/team/mathias2.jpg', alt='Mathias Bragagia')
+                                img(src='/images/team/julien.jpg', alt='Julien Saint-Jean')
+                            .member-hover.hidden-xs.hidden-sm
+                                .list-container
+                                    ul.list-inline.social
+                                        li
+                                            a(href='mailto:julien.saintjean@alsacedigitale.org',target='_blank')
+                                                i.icon-envelope.icon-3x
+                        h5 Julien Saint-Jean
+                        p Animateur de communautés
+                        .list-container.visible-xs.visible-sm
+                            ul.list-inline
+                                li
+                                    a(href='mailto:julien.saintjean@alsacedigitale.org',target='_blank')
+                                        i.icon-envelope.icon-2x
+
+    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Emré Genç --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/emre.jpg', alt='Emré Genç')
+                            .image-hover
+                                img(src='/images/team/emre.jpg', alt='Emré Genç')
                             .member-hover.hidden-xs.hidden-sm
                                 .list-container
                                     ul.list-inline.social
                                         li
                                             a(href='mailto:play2code@alsacedigitale.org',target='_blank')
                                                 i.icon-envelope.icon-3x
-                        h5 Mathias Bragagia
+                        h5 Emré Genç
                         p Service civique Play2Code
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
                                     a(href='mailto:play2code@alsacedigitale.org',target='_blank')
                                         i.icon-envelope.icon-2x
-
-
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Pauline Fontan --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/you.jpg', alt='Pauline Fontan')
-                            .image-hover
-                                img(src='/images/team/you.jpg', alt='Pauline Fontan')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='mailto:contact@strasbourg-startups.com',target='_blank')
-                                                i.icon-envelope.icon-3x
-                        h5 Pauline Fontan
-                        p Service civique Strasbourg Startups
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='mailto:contact@strasbourg-startups.com',target='_blank')
-                                        i.icon-envelope.icon-2x
                 
 
                 .container.row
-
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Chloé Gignet --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/you.jpg', alt='Chloé Gignet')
-                            .image-hover
-                                img(src='/images/team/you.jpg', alt='Chloé Gignet')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='mailto:contact@mulhouse-startups.com',target='_blank')
-                                                i.icon-envelope.icon-3x
-                        h5 Chloé Gignet
-                        p Service civique Mulhouse Startups
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='mailto:contact@mulhouse-startups.com',target='_blank')
-                                        i.icon-envelope.icon-2x
 
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Clément Mbela --> 
                         .member-photo
                             .image
-                                img(src='/images/team/you.jpg', alt='Clément Mbela')
+                                img(src='/images/team/clement.jpg', alt='Clément Mbela')
                             .image-hover
-                                img(src='/images/team/you.jpg', alt='Clément Mbela')
+                                img(src='/images/team/clement.jpg', alt='Clément Mbela')
                             .member-hover.hidden-xs.hidden-sm
                                 .list-container
                                     ul.list-inline.social
@@ -716,25 +691,68 @@ block content
                                         i.icon-envelope.icon-2x
 
 
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Joan Saum --> 
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Anastasia Villien --> 
                         .member-photo
                             .image
-                                img(src='/images/team/joan.jpg', alt='Joan Saum')
+                                img(src='/images/team/you.jpg', alt='Anastasia Villien')
                             .image-hover
-                                img(src='/images/team/joan.jpg', alt='Joan Saum')
+                                img(src='/images/team/you.jpg', alt='Anastasia Villien')
                             .member-hover.hidden-xs.hidden-sm
                                 .list-container
                                     ul.list-inline.social
                                         li
                                             a(href='mailto:play2code@alsacedigitale.org',target='_blank')
                                                 i.icon-envelope.icon-3x
-                        h5 Joan Saum
+                        h5 Anastasia Villien
                         p Service civique Play2Code
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
                                     a(href='mailto:play2code@alsacedigitale.org',target='_blank')
                                         i.icon-envelope.icon-2x
+
+
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Marie Caulliez --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/marie.jpg', alt='Marie Caulliez')
+                            .image-hover
+                                img(src='/images/team/marie.jpg', alt='Marie Caulliez')
+                            .member-hover.hidden-xs.hidden-sm
+                                .list-container
+                                    ul.list-inline.social
+                                        li
+                                            a(href='mailto:contact@strasbourg-startups.com',target='_blank')
+                                                i.icon-envelope.icon-3x
+                        h5 Marie Caulliez
+                        p Service civique Strasbourg Startups
+                        .list-container.visible-xs.visible-sm
+                            ul.list-inline
+                                li
+                                    a(href='mailto:contact@strasbourg-startups.com',target='_blank')
+                                        i.icon-envelope.icon-2x
+
+
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Camille Uhlen --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/camille.jpg', alt='Camille Uhlen')
+                            .image-hover
+                                img(src='/images/team/camille.jpg', alt='Camille Uhlen')
+                            .member-hover.hidden-xs.hidden-sm
+                                .list-container
+                                    ul.list-inline.social
+                                        li
+                                            a(href='mailto:contact@mulhouse-startups.com',target='_blank')
+                                                i.icon-envelope.icon-3x
+                        h5 Camille Uhlen
+                        p Service civique Mulhouse Startups
+                        .list-container.visible-xs.visible-sm
+                            ul.list-inline
+                                li
+                                    a(href='mailto:contact@mulhouse-startups.com',target='_blank')
+                                        i.icon-envelope.icon-2x
+
 
 
             section#contacts

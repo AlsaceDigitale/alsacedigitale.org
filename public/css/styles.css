@@ -98,7 +98,7 @@ height: 100%;
    Navigation Styles
    ========================================================================== */
 
-#top-bar{position:fixed;top:-75px;z-index: 999;width:100%;height:auto;background-color:#162741;}
+#top-bar{position:fixed;top:0px;z-index: 999;width:100%;height:auto;background-color:#162741;}
 #top-navigation ul{display:none;font-size: 1.5em;margin-top: 0.7em;}
 #top-navigation li{width:100%; margin-bottom: 1em; }
 #top-navigation li a{text-decoration:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
@@ -226,8 +226,8 @@ section#plage{padding-bottom: 0;overflow:hidden;}
 #work-filter ul {margin-bottom:2em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 #works select{margin-bottom: 2em;}
 
-.work-info{position:absolute;bottom:-2.5em;width:100%;height:2.5em;background-color: white;-webkit-transition: bottom 0.3s ease-in-out;-moz-transition: bottom 0.3s ease-in-out;-o-transition: bottom 0.3s ease-in-out;transition: bottom 0.3s ease-in-out;}
-.work-info h6{margin-top: 0;padding-top: 0.5em;}
+.work-info{position:absolute;bottom:0em;width:100%;height:2.5em;background-color: white;-webkit-transition: bottom 0.3s ease-in-out;-moz-transition: bottom 0.3s ease-in-out;-o-transition: bottom 0.3s ease-in-out;transition: bottom 0.3s ease-in-out;}
+.work-info h6{margin-top: 0;padding-top: 0.5em;font-size: 14px;font-weight: 400;}
 
 .no-touch .work:hover img, .touch .work img{top: -2.5em;-webkit-filter: grayscale(0%);filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");}
 .no-touch .work:hover .work-info, .touch .work .work-info{bottom:0;}
@@ -396,7 +396,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	
 	/* Top Navigation */
 	
-	#top-bar{top:-60px;height:3.75em;}
+	#top-bar{top:0px;height:3.75em;}
 	#top-navigation{margin-top: 1em;}
 	#top-navigation ul{display:inherit;}
 	#top-navigation li{width:inherit;}
