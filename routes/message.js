@@ -5,7 +5,8 @@ exports.send = function( req, res ) {
     var email = new sendgrid.Email();
         
     email.addTo("contact@alsacedigitale.org");
-    email.setFrom(req.body.email);
+    email.setFrom("contact@alsacedigitale");
+    email.setReplyTo(req.body.email);
     email.setSubject("[Formulaire AD.org] Message de " + req.body.name);
     email.setText(req.body.message);
 
