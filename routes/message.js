@@ -1,19 +1,15 @@
-/**
- * Created by Stéphane on 01/04/2014.
- */
-
-var sendgrid = require('sendgrid')( process.env.API_USER, process.env.API_KEY );
-
+var sendgrid = require("sendgrid")(process.env.SENDGRID_APIKEY);
 
 exports.send = function( req, res ) {
 
-    sendgrid.send( {
-        to: "contact@alsacedigitale.org",
-        from: req.body.email,
-        subject: "Message de " + req.body.name,
-        text: req.body.message
+    var email = new sendgrid.Email();
+        
+    email.addTo("contact@alsacedigitale.org");
+    email.setFrom(req.body.email);
+    email.setSubject("[Formulaire AD.org] Message de " + req.body.name);
+    email.setText(req.body.message);
 
-    }, function( err, json ) {
+    sendgrid.send(email, function( err, json ) {console.log(json);
         if( err ) {
             console.error( err );
             res.send( 500, "oooops" );

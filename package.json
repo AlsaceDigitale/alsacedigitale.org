@@ -9,6 +9,6 @@
     "express": "~3.4.0",
     "jade": "~0.35.0",
     "less-middleware": "~0.1.12",
-    "sendgrid": "^1.0.2"
+    "sendgrid": "^1.9.2"
   }
 }
