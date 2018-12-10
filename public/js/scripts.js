@@ -396,7 +396,7 @@ jQuery(document).ready(function() {
 	/*-----------------------------------------------------------------------------------*/	
 		
 	/* Validation Form with AJAX while typing for inputs */
-	jQuery('input').bind('input propertychange', function() {
+	jQuery('#contact-form input').bind('input propertychange', function() {
 		jQuery(this).parent().find('.error').remove();
 		jQuery(this).parent().find('.valid').remove();
 	    if( jQuery(this).attr('id') == 'email' ){
@@ -423,7 +423,7 @@ jQuery(document).ready(function() {
 	});
 	
 	/* Validation Form with AJAX while typing for textarea */
-	jQuery('textarea').bind('input propertychange', function() {
+	jQuery('#contact-form textarea').bind('input propertychange', function() {
 		jQuery(this).parent().find('.error').remove();
 		jQuery(this).parent().find('.valid').remove();	
 		if(jQuery(this).val() == "" || jQuery(this).val() == " "){
