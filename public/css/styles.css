@@ -11,7 +11,7 @@ Author URI:         http://creativemarket.com/digitalcookers
    General Styles
    ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 html,body,#page{width: 100%;height: 100%;margin: 0px;padding: 0px; -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
