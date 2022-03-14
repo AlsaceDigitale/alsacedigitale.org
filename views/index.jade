@@ -45,8 +45,8 @@ block content
                         h1 QUI SOMMES-NOUS ?
                         p.
                             Alsace Digitale est une association ayant pour ambition d’animer et de promouvoir la révolution
-                            numérique dans la région Alsace. Soutenue par <a href="http://www.strasbourg.eu">l'Eurométropole de Strasbourg</a>,
-                            elle a ouvert à Jacques Peirotes en avril 2012 <a href="http://www.laplagedigitale.eu/">"La Plage Digitale"</a>, le premier espace de coworking de Strasbourg.
+                            numérique dans la région Alsace. Soutenue par <a href="http://www.strasbourg.eu" target="_blank">l'Eurométropole de Strasbourg</a>,
+                            elle a ouvert à Jacques Peirotes en avril 2012 <a href="http://www.laplagedigitale.eu/" target="_blank">"La Plage Digitale"</a>, tiers lieu de Strasbourg.
                         p.
                             C’est en partant d’un constat concret qu’Alsace Digitale est née : à l’heure actuelle, l’Alsace dispose
                             d’une des plus grandes universités de France, d’écoles d’ingénieurs reconnues, d’une forte pénétration
@@ -71,9 +71,8 @@ block content
                     .col-xs-12.col-sm-6.col-sm-offset-3.intro
                         h1 COWORKING À STRASBOURG.
                         p
-                            a(href="http://www.laplagedigitale.eu/") La Plage Digitale 
-                            | est un espace de coworking situé à Strasbourg au 15 avenue du Rhin (au centre commercial Rivétoile), chaque lieu peut
-                            | accueillir une trentaine de personnes dans une ambiance de travail conviviale.
+                            a(href="http://www.laplagedigitale.eu/" target="_blank") La Plage Digitale 
+                            | est un tiers lieu situé à Strasbourg au 13 rue Jacques Peirotes, les salles de réunion sont ouvertes à la location pour organiser des événements de 1 à 70 personnes dans une ambiance de travail conviviale.
                             | Ces espaces servent aussi de point d'ancrage pour de nombreux évènements d'Alsace Digitale.
                         p
                             a.btn.btn-primary.btn-lg(href='http://www.laplagedigitale.eu/', target='_blank') Découvrir
@@ -85,16 +84,29 @@ block content
                         .col-xs-12
                             #swiper.swiper-container
                                 .swiper-wrapper
-                                    .swiper-slide
-                                        img(src='/images/plage/la_plage_1.jpg', alt='la plage 1')
-                                    .swiper-slide
-                                        img(src='/images/plage/la_plage_2.jpg', alt='la plage 2')
-                                    //.swiper-slide
-                                    //    img(src='/images/plage/la_plage_3.jpg', alt='la plage 3')
-                                    .swiper-slide
-                                        img(src='/images/plage/la_plage_4.jpg', alt='la plage 3')
-                                    .swiper-slide
-                                        img(src='/images/plage/la_plage_5.jpg', alt='la plage 3'))
+                                    //- .swiper-slide
+                                    //-     img(src='/images/plage/la_plage_1.jpg', alt='la plage 1')
+                                    //- .swiper-slide
+                                    //-     img(src='/images/plage/la_plage_2.jpg', alt='la plage 2')
+                                    //- //.swiper-slide
+                                    //- //    img(src='/images/plage/la_plage_3.jpg', alt='la plage 3')
+                                    //- .swiper-slide
+                                    //-     img(src='/images/plage/la_plage_4.jpg', alt='la plage 3')
+                                    //- .swiper-slide
+                                    //-     img(src='/images/plage/la_plage_5.jpg', alt='la plage 3'))
+            section#feed
+                .row
+                    .col-xs-12.col-sm-6.col-sm-offset-3.intro
+                        h2 L'ACTUALITÉ
+                        p Suivez l'actualité de l'association sur les réseaux sociaux
+                .row
+                    .col-md-6.feed-left
+                        .fb-page(data-href='https://www.facebook.com/alsace.digitale/', data-tabs='timeline', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-width='500')
+                            blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/alsace.digitale/')
+                                a(href='https://www.faceook.com/alsace.digitale/') Alsace Digitale
+                    .col-md-6.feed-right
+                        a.twitter-timeline(data-lang='fr', data-width='500' data-height='500', href='https://twitter.com/AlsaceDigitale', data-theme='light') Tweets de AlsaceDigitale
+                        script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
 
             section#works
                 .row
@@ -216,23 +228,6 @@ block content
                             img(src='/images/event/global-game-jam.jpg', alt='work')
                             .work-info
                                 h6 Global Game Jam
-
-            section#feed
-                .row
-                    .col-xs-12.col-sm-6.col-sm-offset-3.intro
-                        h2 L'ACTUALITÉ
-                        p Suivez l'actualité de l'association sur les réseaux sociaux
-                .row
-                    .col-md-6.feed-left
-                        .fb-page(data-href='https://www.facebook.com/alsace.digitale/', data-tabs='timeline', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-width='500')
-                            blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/alsace.digitale/')
-                                a(href='https://www.faceook.com/alsace.digitale/') Alsace Digitale
-                    .col-md-6.feed-right
-                        a.twitter-timeline(data-lang='fr', data-width='500' data-height='500', href='https://twitter.com/AlsaceDigitale', data-theme='light') Tweets de AlsaceDigitale
-                        script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
-
-
-                        
 
             section#team
                 .row
@@ -430,28 +425,6 @@ block content
                 
                     .col-xs-12
                         h2.team-title Permanents 
-                
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Sophie Charpentier--> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/sophie.jpg', alt='Sophie Charpentier')
-                            .image-hover
-                                img(src='/images/team/sophie.jpg', alt='Sophie Charpentier')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='mailto:sophie.charpentier@alsacedigitale.org',target='_blank')
-                                                i.icon-envelope.icon-3x
-                        h5 Sophie Charpentier
-                        p Chargée d'espace de coworking
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='mailto:sophie.charpentier@alsacedigitale.org',target='_blank')
-                                        i.icon-envelope.icon-2x
-
-
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Catherine Mosser --> 
                         .member-photo
@@ -496,8 +469,14 @@ block content
                                     a(href='https://www.linkedin.com/in/sa%C3%AFd-besso-13429b94/',target='_blank')
                                         i.icon-linkedin.icon-2x
 
-
-
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Nicolas Schroetter --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/you.jpg', alt='Nicolas Schroetter')
+                            .image-hover
+                                img(src='/images/team/you.jpg', alt='Nicolas Schroetter')
+                        h5 Nicolas Schroetter
+                        p Conseiller Numérique
 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Leila Zaidi --> 
                         .member-photo
@@ -518,12 +497,6 @@ block content
                                 li
                                     a(href='mailto:leila.zaidi@alsacedigitale.org',target='_blank')
                                         i.icon-envelope.icon-2x
-
-
-
-
-                .container.row
-
                 
                     .col-xs-6.col-sm-6.col-md-3.member <!-- Cecilia Di Pietro --> 
                         .member-photo
@@ -552,25 +525,66 @@ block content
                                         i.icon-linkedin.icon-2x
 
                 
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Lisa Krill --> 
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Paul Moio --> 
                         .member-photo
                             .image
-                                img(src='/images/team/lisa.jpg', alt='Lisa Krill')
+                                img(src='/images/team/Paul.jpg', alt='Paul Moio')
                             .image-hover
-                                img(src='/images/team/lisa.jpg', alt='Lisa Krill')
+                                img(src='/images/team/Paul.jpg', alt='Paul Moio')
+                        h5 Paul Moio
+                        p Chargée de communication
+
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Roger Mori --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/roger.jpg', alt='Roger Mori')
+                            .image-hover
+                                img(src='/images/team/roger.jpg', alt='Roger Mori')
                             .member-hover.hidden-xs.hidden-sm
                                 .list-container
                                     ul.list-inline.social
                                         li
-                                            a(href='https://www.linkedin.com/in/lisa-krill-165925194/',target='_blank')
+                                            a(href='mailto:roger.mori@alsacedigitale.org',target='_blank')
+                                                i.icon-envelope.icon-3x
+                                        li
+                                            a(href='https://www.linkedin.com/in/roger-mori-080747197',target='_blank')
                                                 i.icon-linkedin.icon-3x
-                        h5 Lisa Krill
-                        p Chargée de communication
+                        h5 Roger Mori
+                        p Chargé de Projet Innovation
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
                                 li
-                                    a(href='https://www.linkedin.com/in/lisa-krill-165925194/',target='_blank')
+                                    a(href='mailto:roger.mori@alsacedigitale.org',target='_blank')
+                                        i.icon-envelope.icon-2x
+                                li
+                                    a(href='https://www.linkedin.com/in/roger-mori-080747197',target='_blank')
+                                        i.icon-linkedin.icon-3x
+                    
+                    .col-xs-6.col-sm-6.col-md-3.member <!-- Colin Cleary --> 
+                        .member-photo
+                            .image
+                                img(src='/images/team/colin.jpg', alt='Colin Cleary')
+                            .image-hover
+                                img(src='/images/team/colin.jpg', alt='Colin Cleary')
+                            .member-hover.hidden-xs.hidden-sm
+                                .list-container
+                                    ul.list-inline.social
+                                        li
+                                            a(href='https://www.linkedin.com/in/colincleary/',target='_blank')
+                                                i.icon-linkedin.icon-3x
+                                        li
+                                            a(href='https://twitter.com/CColinCleary',target='_blank')
+                                                i.icon-twitter.icon-2x
+                        h5 Colin Cleary
+                        p Chargé de Projet
+                        .list-container.visible-xs.visible-sm
+                            ul.list-inline
+                                li
+                                    a(href='https://www.linkedin.com/in/colincleary/',target='_blank')
                                         i.icon-linkedin.icon-2x
+                                li
+                                        a(href='https://twitter.com/CColinCleary',target='_blank')
+                                            i.icon-twitter.icon-2x
 
     
 
