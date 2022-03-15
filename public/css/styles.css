@@ -98,12 +98,12 @@ height: 100%;
    Navigation Styles
    ========================================================================== */
 
-#top-bar{position:fixed;top:0px;z-index: 999;width:100%;height:auto;background-color:#162741;}
+#top-bar{position:fixed;top:0px;z-index: 999;width:100%;height:auto;background-color:#1871f8;}
 #top-navigation ul{display:none;font-size: 1.5em;margin-top: 0.7em;}
 #top-navigation li{width:100%; margin-bottom: 1em; }
 #top-navigation li a{text-decoration:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
-#top-navigation li:not(active) a{color:#ffffff;}
-#top-navigation li.active a, #top-navigation li:hover a{color:#3679b0;}
+#top-navigation li:not(active) a{color:#ffffff; padding : 0px 15px}
+#top-navigation li.active a, #top-navigation li:hover a{color:#bbcce6;}
 
 #logo-lettering img{height: 3.125em;}
 
@@ -388,7 +388,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	/* Navigation */
 	
 	#top-navigation ul{float:right;}
-   #top-navigation ul{display:none;font-size: 1.285em;margin-top: 0.3em;}
+   #top-navigation ul{display:none;font-size: 1.285em;}
 	
 	/* Logo */
 	
@@ -396,7 +396,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	
 	/* Top Navigation */
 	
-	#top-bar{top:0px;height:3.75em;}
+	#top-bar{top:0px;height:5em;}
 	#top-navigation{margin-top: 1em;}
 	#top-navigation ul{display:inherit;}
 	#top-navigation li{width:inherit;}
