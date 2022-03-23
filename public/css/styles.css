@@ -11,14 +11,14 @@ Author URI:         http://creativemarket.com/digitalcookers
    General Styles
    ========================================================================== */
 
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
+   @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;600&family=Secular+One&display=swap');
 
 html,body,#page{width: 100%;height: 100%;margin: 0px;padding: 0px; -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;}
 html{-webkit-font-smoothing: antialiased;}
-body {background: #fff; font-family: 'Open Sans','Helvetica Neue';line-height: 1.2em;}
-h1,h2,h3,h4,h5,h6{color: #3679b0;letter-spacing: -0.03em;font-weight: 300; font-family: 'Open Sans', Times, serif;}
+body {background: #fff; font-family: 'Hind Siliguri', sans-serif;line-height: 1.2em;}
+h1,h2,h3,h4,h5,h6{color: #3679b0;letter-spacing: -0.03em; font-family: 'Secular One', sans-serif;}
 
 a{color: #3679b0; cursor:pointer;}
 p{color: #4a4a4a;font-size: 1.125em;line-height: 1.5625em;}
@@ -29,7 +29,7 @@ time{color:#3679b0;}
    ========================================================================== */
 
 .text-right{text-align: right;}
-.intro{margin-bottom: 3.125em;text-align: center;}
+.intro p{margin-bottom: 3.125em;text-align: justify;text-align-last: center;}
 .fixed{position:fixed;top:-60px;}
 .smooth,.smooth img{-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
 
@@ -72,7 +72,9 @@ height: 100%;
    Header Styles
    ========================================================================== */
 
-#header{overflow:hidden;height:auto;background: url('/images/background.jpg') fixed no-repeat; background-size: 100% auto; height:100%;}
+#header{overflow:hidden; height:auto; background-image: url('/images/background.jpg'); background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; height:100%;}
 .no-touch #header{-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-attachment: fixed;}
 @media (max-width: 1100px) and (orientation: portrait) {
 #header{background-size:auto 100%;background-position: center;}
@@ -98,17 +100,23 @@ height: 100%;
    Navigation Styles
    ========================================================================== */
 
-#top-bar{position:fixed;top:0px;z-index: 999;width:100%;height:auto;background-color:#162741;}
+#top-bar{position:fixed;top:0px;z-index: 999;width:100%;height:auto;background-color:#1871f8;}
 #top-navigation ul{display:none;font-size: 1.5em;margin-top: 0.7em;}
 #top-navigation li{width:100%; margin-bottom: 1em; }
-#top-navigation li a{text-decoration:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
-#top-navigation li:not(active) a{color:#ffffff;}
-#top-navigation li.active a, #top-navigation li:hover a{color:#3679b0;}
+#top-navigation li a{text-decoration:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out; font-family: 'Secular One', sans-serif;}
+#top-navigation li:not(active) a{color:#ffffff; padding : 0px 15px}
+#top-navigation li.active a, #top-navigation li:hover a{color:#bbcce6;}
 
-#logo-lettering img{height: 3.125em;}
+#logo-lettering {height: auto;}
+#logo-lettering img{width: 4.5em;}
 
 #menu-mobile i{position:absolute;top:0.3em;right:0.6em; color: white; cursor:pointer;}
-#menu-mobile:hover i,#menu-mobile.active i{color:#3679b0;}
+#menu-mobile:hover i,#menu-mobile.active i{color:#cbd7e0;}
+
+@media (max-width: 1200px){
+	.col-md-9 {width: 75%;}
+	#top-navigation li:not(active) a{padding : 0px;}
+}
 
 /* ==========================================================================
    All Section Styles
@@ -129,8 +137,9 @@ section{padding-top: 3.125em;padding-bottom: 1.875em;text-align: center;}
 .member h5{margin-top: 1em;margin-bottom: 0;font-size: 1.125em;}
 .member p{margin-bottom: 0;font-size: 0.75em;}
 
-.member-photo{position:relative; overflow: hidden; margin-bottom: 1.8em;background: #000;}
-.member-photo img{width: 100%;display:block;margin: 0 auto;}
+.member-photo{position:relative; overflow: hidden; margin-bottom: 1.8em; border-radius: 15px 15px; box-shadow: 0px 5px 7px rgba(7, 0, 71, 0.144);}
+.member-photo img{width: 100%;display:block;margin: 0 auto; border-radius: 15px 15px;}
+.member-photo div{border-radius: 15px 15px;}
 
 .member-hover{position: absolute;top: 0;right: 0;width: 100%;height: 100%;background-color: rgb(63,142,204);background-color: rgba(63,142,204,0);-webkit-transition: background-color 0.4s ease-in-out;-moz-transition: background-color 0.4s ease-in-out;-o-transition: background-color 0.4s ease-in-out;transition: background-color 0.4s ease-in-out;}
 
@@ -165,10 +174,13 @@ ul.social li a:hover i{color:white;}
    plage Styles
    ========================================================================== */
 section#plage{padding-bottom: 0;overflow:hidden;}
-#whoarewe, #works {background-color:#62819a;}
-#contacts {background-color: #f2f2f2}
+#whoarewe, #works {background-color:#3b91d8}
+#contacts, #feed, #team, #plage {background-color: #f0f0f0}
 
-.swiper-slide:not(.swiper-slide-active) img{-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}
+
+.swiper-slide:not(.swiper-slide-active) img{
+	-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
 
 /* Swiper - Mobile Touch Slider CSS 
    http://www.idangero.us/sliders/swiper 
@@ -213,21 +225,24 @@ section#plage{padding-bottom: 0;overflow:hidden;}
    Work Styles
    ========================================================================== */
    
-#works{padding-bottom: 3.25em;overflow-x: hidden;}
+#works{padding-bottom: 3.25em;overflow-x: hidden; text-align: center;}
 #works .intro{margin-bottom:1.5em;}
 #w-filter.row select.visible-xs{width:100%;}
 
-.work {position:relative;overflow:hidden; margin-bottom: 1.5em;cursor:pointer;}
-.work img{position: relative; width:100%;top:0;-webkit-transition: top 0.3s ease-in-out;-moz-transition: top 0.3s ease-in-out;-o-transition: top 0.3s ease-in-out;transition: top 0.3s ease-in-out; display:block;-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}
+.work {position:relative;overflow:hidden; margin-bottom: 1.5em;cursor:pointer; border-radius: 15px; box-shadow: 0px 5px 7px rgba(7, 0, 71, 0.308);}
+.work img{position: relative; width:100%;top:0;-webkit-transition: top 0.3s ease-in-out;-moz-transition: top 0.3s ease-in-out;-o-transition: top 0.3s ease-in-out;transition: top 0.3s ease-in-out; display:block;
+	/* -webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); */
+}
 
-#work-filter{margin:0;margin-bottom: 0.5em;font-weight: bold;font-size: 1.3125em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
-#work-filter li{cursor:pointer;color:#19304d;}
-#work-filter li.active, #work-filter li:hover{color:#ffffff;}
+#work-filter{margin:0;margin-bottom: 0.5em; font-family: 'Secular One', sans-serif; font-size: 1.3125em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+#work-filter li{cursor:pointer;color:#f5f9ff; text-transform: uppercase; padding: 7px 1em 7px 1em; transition: 0.2s}
+#work-filter li.active{color: #fff; border-bottom: 4px solid #fff; transition: 0.2s}
+#work-filter li:hover{color:rgba(255, 255, 255, 0.568); transition: 0.2s}
 #work-filter ul {margin-bottom:2em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 #works select{margin-bottom: 2em;}
 
 .work-info{position:absolute;bottom:0em;width:100%;height:2.5em;background-color: white;-webkit-transition: bottom 0.3s ease-in-out;-moz-transition: bottom 0.3s ease-in-out;-o-transition: bottom 0.3s ease-in-out;transition: bottom 0.3s ease-in-out;}
-.work-info h6{margin-top: 0;padding-top: 0.5em;font-size: 14px;font-weight: 400;}
+.work-info h6{margin-top: 0;padding-top: 0.5em;font-size: 1em; text-transform: uppercase;}
 
 .no-touch .work:hover img, .touch .work img{top: -2.5em;-webkit-filter: grayscale(0%);filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");}
 .no-touch .work:hover .work-info, .touch .work .work-info{bottom:0;}
@@ -240,7 +255,7 @@ section#plage{padding-bottom: 0;overflow:hidden;}
    Feed Styles
    ========================================================================== */
 
-#feed{background-color:white; text-align: center;padding-bottom: 0;}
+#feed{text-align: center;padding-bottom: 0;}
 #feed .row{max-width: none;}
 #feed .intro, #feed .intro h2{margin-bottom: 0;}
 
@@ -252,6 +267,7 @@ section#plage{padding-bottom: 0;overflow:hidden;}
 #feed ul li:hover i{text-decoration:none;opacity:1;}
 #feed .feed-left {text-align: right;margin: 20px 0;}
 #feed .feed-right {text-align: left;margin: 20px 0;}
+#feed .feed-right iframe , #feed .feed-left iframe{border-radius: 15px; box-shadow: 0px 5px 7px rgba(7, 0, 71, 0.144);}
 
 @media (max-width: 1100px) {
   #feed .feed-left {width: 100%!important;text-align: center;}
@@ -328,12 +344,16 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
    Project Styles
    ========================================================================== */
    
-#project-page{display:none;}
+@media (min-width: 1200px) {
+	#project-page{display:none; width: 75%; margin: auto;}
+}
+
+#project-page{display:none; margin: auto;}
 #project-page .button{border:none;box-shadow:inherit;}
 
-#project-header{width:100%;position:relative;overflow:hidden; background: #000;}
+#project-header{width:100%;position:relative;overflow:hidden; background: #FFF;}
 
-#project-top-bar{width:100%;height:50px; background: #1a1a1a; z-index:999;}
+#project-top-bar{width:100%;height:50px; background: #FFF; z-index:999;}
 #project-top-bar p{color: white;}
 
 #next-project{background-image: url('../images/works/arrow-right.svg');}
@@ -352,9 +372,10 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 #next-project-name,#previous-project-name{display:none;}
 
 #project-details{padding:3em 0;}
+#project-details p {text-align: justify; text-align-last: left;}
 #project-details h5{margin-bottom: 0;}
 
-#project-details #project-description{margin-bottom: 2em;}
+#project-details #project-description{margin-bottom: 2em; }
 
 #project-details img{width:100%; height:auto;margin-bottom: 2em;}
 
@@ -388,7 +409,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	/* Navigation */
 	
 	#top-navigation ul{float:right;}
-   #top-navigation ul{display:none;font-size: 1.285em;margin-top: 0.3em;}
+   #top-navigation ul{display:none;font-size: 1.285em;}
 	
 	/* Logo */
 	
@@ -396,7 +417,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	
 	/* Top Navigation */
 	
-	#top-bar{top:0px;height:3.75em;}
+	#top-bar{top:0px;height:5em;}
 	#top-navigation{margin-top: 1em;}
 	#top-navigation ul{display:inherit;}
 	#top-navigation li{width:inherit;}
@@ -433,19 +454,26 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	
 	#next-project,#previous-project,#close-project,#next-project-name, #previous-project-name{position:fixed; z-index: 999;}
 	#close-project{top:0.4125em; left:1.25em;width:1.5em;height:1.5em;background-size: 1.5em;}
-	#next-project{top:18.2em; right:1.25em;}
-	#previous-project{top:18.2em; left:1.25em;}
+	#next-project{position: fixed; top: 45%; right: 2%;}
+	#previous-project{position: fixed; top: 45%; left: 2%;}
 		
-	#next-project-name, #previous-project-name{background-color:rgb(244,89,78);background-color:rgba(244,89,78,0.7);padding:0.5em 1em;opacity:0; display: inherit;color:white;}
-	#next-project-name{top:18.8em; right:8em;}
-	#previous-project-name{top:18.8em; left:8em;}
+	#next-project-name, #previous-project-name{background-color:#3b91d8; padding:0.5em 1em;opacity:0; display: inherit;color:white; border-radius: 5px;}
+	#next-project-name , #previous-project-name{position: fixed; top: 45.5%;}
 	
 	#next-project-name h2,#previous-project-name h2{color:white;font-size: 0.8em; padding:0;margin: 0;}
 	
-  #next-project, #previous-project, #close-project{opacity:0.6;-webkit-transition: opacity 0.3s ease-in-out;-moz-transition: opacity 0.3s ease-in-out;-o-transition: opacity 0.3s ease-in-out;transition: opacity 0.3s ease-in-out;}
-  #next-project:hover,#previous-project:hover,#close-project:hover{opacity:1;}
-  #close-project{opacity: 0.8;background-image: none;}
-  #close-project::after{content:"Retour"; position: absolute; display:block; background: #f4594e; color: #fff; padding: 15px; padding-top: 12px; font-size: 2em;}
+  #next-project, #previous-project, #close-project{
+	  opacity: 1;
+	  transition: 0.2s;
+	}
+  #next-project:hover,#previous-project:hover,#close-project:hover{
+	  opacity:0.65;
+	  transition: 0.2s;
+	}
+  #close-project{
+	  background-image: none;
+	}
+  #close-project::after{content:"Retour"; position: absolute; display:block; background: #3b91d8; color: #fff; padding: 15px; padding-top: 12px; font-size: 2em; border-radius: 5px;}
 	
 
 }
