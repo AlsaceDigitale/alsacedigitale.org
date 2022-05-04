@@ -20,6 +20,10 @@ html{-webkit-font-smoothing: antialiased;}
 body {background: #fff; font-family: 'Hind Siliguri', sans-serif;line-height: 1.2em;}
 h1,h2,h3,h4,h5,h6{color: #3679b0;letter-spacing: -0.03em; font-family: 'Secular One', sans-serif;}
 
+input[type=submit]#mc-embedded-subscribe{ color: #333333; background-color: #ffffff; border-color: #cccccc; font-family: 'Hind Siliguri', sans-serif;}
+
+input[type=submit]#mc-embedded-subscribe:hover{ opacity: 0.8; color: #333333; background-color: #ffffff; border-color: #cccccc;}
+
 a{color: #3679b0; cursor:pointer;}
 p{color: #4a4a4a;font-size: 1.125em;line-height: 1.5625em;}
 select{color: white;padding: 0 1em; height: 2.4em;outline: none;border: 0;border-radius: 0 !important;background: url('../images/arrow-down.png') no-repeat right 0.8em #3679b0;-webkit-appearance: none;}
@@ -113,10 +117,26 @@ height: 100%;
 #menu-mobile i{position:absolute;top:0.3em;right:0.6em; color: white; cursor:pointer;}
 #menu-mobile:hover i,#menu-mobile.active i{color:#cbd7e0;}
 
-@media (max-width: 1200px){
-	.col-md-9 {width: 75%;}
-	#top-navigation li:not(active) a{padding : 0px;}
-}
+@media (max-width: 1200px){.col-md-9 {width: 75%;}#top-navigation li:not(active) a{padding : 0px;}#top-navigation li:not(active) a{padding : 5px; font-size: 1em;}}
+
+/* ==========================================================================
+   Dark Mode
+   ========================================================================== */
+
+body.dark, body.dark #contacts,body.dark #feed,body.dark #team,body.dark #plage , body.dark #project, body.dark #page{ background-color: #252528}
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 , body.dark #team a, body.dark #plage a{color: #80c6ff;}
+body.dark p , body.dark footer #copyrights, body.dark #plage .btn, body.dark #contacts input[type="text"]::placeholder, body.dark #contacts textarea::placeholder , body.dark #contacts input[type="text"] ,body.dark #contacts textarea{color: #FFF;}
+body.dark section#plage p {color : #fff !important;}
+
+body.dark footer , body.dark #contacts input[type="text"], body.dark #contacts textarea, body.dark #project-top-bar{background-color: #333338;}
+
+#modeBtn{position: fixed; left: 15px; bottom: 15px; width:39px; height: 39px; -webkit-appearance: none; background: #bdceee; outline: none; border-radius: 20px; transition: 0.2s;}
+
+input#modeBtn:checked:before{filter: invert();}
+
+input#modeBtn:before{content: "";width: 39px;height: 39px;border-radius: 20px;position: absolute;z-index:10000;top:0px;left:0px;background-color: rgb(255, 255, 255);transition: 0.2s;background-image: url(../images/iconeDarkMode.png);background-repeat: no-repeat;background-position: center;}
+
+#extarnal-navigation, #extarnal-navigation ul, #extarnal-navigation li{width: 0px;height: 0px;list-style-type: none;}
 
 /* ==========================================================================
    All Section Styles
@@ -177,7 +197,7 @@ section#plage{padding-bottom: 0;overflow:hidden;}
 #whoarewe, #works {background-color:#3b91d8}
 #contacts, #feed, #team, #plage {background-color: #f0f0f0}
 
-
+section#plage .btn{border: none;}
 .swiper-slide:not(.swiper-slide-active) img{
 	-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
 }
@@ -301,12 +321,12 @@ section#plage{padding-bottom: 0;overflow:hidden;}
 input{color:#1a1a1a;font-weight: normal;}
 input[type="text"]{ margin-bottom: 15px;height:40px;}
 textarea{height:120px; resize: none;}	
-input[type="text"], textarea{padding:0.6em;width: 100%;outline: none;border: none;-webkit-border-radius:0px;box-shadow: none; color: #1a1a1a;}
+input[type="text"], textarea{padding:0.6em;width: 100%;outline: none;border: none; border-radius:5px;box-shadow: none; color: #1a1a1a;}
 input[type="text"]:focus, textarea:focus{background: #e6e6e6; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; transition: all 0.15s linear;}
 
 
-#contacts .btn{width:100%;margin-top:1em; border-radius:0; border:none; background-color: #3679b0; color: white;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
-#contacts .btn:hover{background-color: #2a2a2a; color: white;}
+#contacts .btn{width:100%;margin-top:1em; border-radius:5px; border:none; background-color: #3679b0; color: white;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+#contacts .btn:hover{background-color: #1c4c72; color: white;}
 .formContainer{position: relative;}
 
 
@@ -325,7 +345,7 @@ span.valid{background-image:url("../images/notifications/valid.svg");}
 .contact-info {margin-top:2em;}
 .contact-info p{margin-top: 1em;font-size: 1em;}
 .contact-info .icon a i{text-decoration: none;color:#3679b0;}
-.contact-info .icon a:hover i{color:black;}
+.contact-info .icon a:hover i{color:#1c4c72;}
 
 .contact-label{color:#999;font-size: 1.5em;font-family: 'Open Sans', sans-serif;}
 
@@ -335,8 +355,8 @@ span.valid{background-image:url("../images/notifications/valid.svg");}
 footer{padding-bottom: 3.75em; background-color:#f2f2f2;}
 footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 
-#social-profiles ul.centerUl li a i {text-decoration:none; color: black;opacity: 0.5;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
-#social-profiles ul.centerUl li a:hover i{color:black;opacity: 1;}
+#social-profiles ul.centerUl li a i {text-decoration:none; -webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+#social-profiles ul.centerUl li a:hover i{color:#1c4c72;opacity: 1;}
 
 #copyrights {padding:0; margin:0;margin-top:30px;font-size: 0.7em; color: grey; text-align: center;}
 

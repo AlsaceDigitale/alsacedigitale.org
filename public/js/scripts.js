@@ -107,7 +107,7 @@ jQuery(document).ready(function() {
 	    jQuery(this).addClass('active');
 	
 	    jQuery('html, body').stop().animate({
-	        scrollTop: jQuery(anchor.attr('href')).offset().top-50
+	        scrollTop: jQuery(anchor.attr('href')).offsetTop(-50)
 	    }, 1500,'easeInOutExpo');
 	    
 	    /* If Mobile hide menu on select */
@@ -526,3 +526,36 @@ jQuery(document).ready(function() {
 		return false;
 	});
 });
+
+/*-----------------------------------------------------------------------------------*/
+/*	DarkMode
+/*-----------------------------------------------------------------------------------*/
+
+window.onload = darkModeOnLoad();
+
+function darkmode(){
+	var body = document.querySelector("body");
+	var checkBox = document.getElementById("modeBtn");
+	let bodyClass;
+	if(checkBox.checked){
+		body.classList.add("dark")
+		bodyClass = "dark";
+		localStorage.setItem("bodyClass", JSON.stringify(bodyClass));
+	}
+	else{
+		body.classList.remove("dark")
+		bodyClass = "";
+		localStorage.setItem("bodyClass", JSON.stringify(bodyClass));
+	}
+}
+
+function darkModeOnLoad(){
+	var body = document.querySelector("body");
+	var checkBox = document.getElementById("modeBtn");
+	let bodyClass = JSON.parse(localStorage.getItem("bodyClass"));
+
+	if(bodyClass == "dark"){
+		body.classList.add("dark")
+		checkBox.checked = true;
+	}
+}
