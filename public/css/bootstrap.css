@@ -563,8 +563,8 @@ ol ol {
 
 .list-inline > li {
   display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
+  /* padding-right: 5px;
+  padding-left: 5px; */
 }
 
 dl {
@@ -2198,6 +2198,7 @@ fieldset[disabled] .btn-link:focus {
 
 .btn-lg {
   padding: 10px 16px;
+  min-width: 150px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
