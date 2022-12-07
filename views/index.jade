@@ -243,191 +243,66 @@ block content
                             pour animer le tissu économique local. Nos actions sont possibles grâce à l'implication
                             de nos bénévoles.
                         p   A ce titre, nous avons toujours à coeur&nbsp;
-                            a(href="https://www.helloasso.com/associations/alsace-digitale/adhesions/membre-alsace-digitale-2021" target="_blank")
+                            a(href="http://inscription.alsacedigitale.org" target="_blank")
                                 | d'accueillir toutes les bonnes volontés.
 
                 .container.row
                     .col-xs-12
-                        h2.team-title Membres du bureau
+                        h2.team-title Membres du Conseil d'Administration
                 
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Emmanuelle Ebel-Jost --> 
+                    each caRow in chunkArrayInGroups(randomizeArray(caMembers),4)
+                        .container.row
+                            each caMember in caRow
+                                .col-xs-6.col-sm-6.col-md-3.member <!-- #{caMember.name} -->
                         .member-photo
                             .image
-                                img(src='/images/team/emmanuelle.jpg', alt='Emmanuelle Ebel-Jost')
+                                            img(src='/images/team/'+(caMember.image || 'you.jpg'), alt=caMember.name)
                             .image-hover
-                                img(src='/images/team/emmanuelle.jpg', alt='Emmanuelle Ebel-Jost')
+                                            img(src='/images/team/'+(caMember.image || 'you.jpg'), alt=caMember.name)
+                                        if caMember.social
                             .member-hover.hidden-xs.hidden-sm
                                 .list-container
                                     ul.list-inline.social
+                                                        if caMember.social.facebook
                                         li
-                                            a(href='https://www.linkedin.com/in/emmanuelleebel/',target='_blank')
-                                                i.icon-linkedin.icon-3x
-                                        li
-                                            a(href='http://www.adoc-metis.com',target='_blank')
-                                                i.icon-link.icon-3x
-                        h5 Emmanuelle Ebel-Jost
-                        p Vice-présidente "Arts et Culture numérique"
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='https://www.linkedin.com/in/emmanuelleebel/',target='_blank')
-                                        i.icon-linkedin.icon-2x
-                                li
-                                    a(href='http://www.adoc-metis.com',target='_blank')
-                                        i.icon-link.icon-2x
-
-
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Nicolas Jung -->
-                        .member-photo
-                            .image
-                                img(src='/images/team/you.jpg', alt='Nicolas Jung')
-                            .image-hover
-                                img(src='/images/team/you.jpg', alt='Nicolas Jung')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                        h5 Nicolas Jung
-                        p Trésorier
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-
-
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Yannick Jost --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/yannick.jpg', alt='Yannick Jost')
-                            .image-hover
-                                img(src='/images/team/yannick.jpg', alt='Yannick Jost')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='http://facebook.com/yannick.jost',target='_blank')
+                                                                a(href='http://facebook.com/'+caMember.social.facebook,target='_blank')
                                                 i.icon-facebook.icon-3x
+                                                        if caMember.social.twitter
                                         li
-                                            a(href='http://twitter.com/yanjost',target='_blank')
+                                                                a(href='http://twitter.com/'+caMember.social.twitter,target='_blank')
                                                 i.icon-twitter.icon-3x
+                                                        if caMember.social.linkedin
                                         li
-                                            a(href='http://www.linkedin.com/in/yannickjost',target='_blank')
+                                                                a(href='http://www.linkedin.com/in/'+caMember.social.linkedin,target='_blank')
                                                 i.icon-linkedin.icon-3x
+                                                        if caMember.social.web
                                         li
-                                            a(href='http://www.strataggem.com',target='_blank')
+                                                                a(href=caMember.social.web,target='_blank')
                                                 i.icon-link.icon-3x
-                        h5 Yannick Jost
-                        p Trésorier-adjoint, VP "Hacking &amp; DIY"
+                                    h5 #{caMember.name}
+                                    p #{caMember.job}
+                                    if caMember.social
                         .list-container.visible-xs.visible-sm
                             ul.list-inline
+                                                if caMember.social.facebook
                                 li
-                                    a(href='http://facebook.com/yannick.jost',target='_blank')
+                                                        a(href='http://facebook.com/'+caMember.social.facebook,target='_blank')
                                         i.icon-facebook.icon-2x
+                                                if caMember.social.twitter
                                 li
-                                    a(href='http://twitter.com/yanjost',target='_blank')
+                                                        a(href='http://twitter.com/'+caMember.social.twitter,target='_blank')
                                         i.icon-twitter.icon-2x
+                                                if caMember.social.linkedin
                                 li
-                                    a(href='http://www.linkedin.com/in/yannickjost',target='_blank')
+                                                        a(href='http://www.linkedin.com/in/'+caMember.social.linkedin,target='_blank')
                                         i.icon-linkedin.icon-2x
+                                                if caMember.social.web
                                 li
-                                    a(href='http://www.strataggem.com',target='_blank')
+                                                        a(href=caMember.social.web,target='_blank')
                                         i.icon-link.icon-2x
                 
 
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Polina Mikhaylova --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/polina.jpg', alt='Polina Mikhaylova')
-                            .image-hover
-                                img(src='/images/team/polina.jpg', alt='Polina Mikhaylova')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='https://www.linkedin.com/in/polina-mikhaylova-523b2886/',target='_blank')
-                                                i.icon-linkedin.icon-3x
-                        h5 Polina Mikhaylova
-                        p Présidente
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='https://www.linkedin.com/in/polina-mikhaylova-523b2886/',target='_blank')
-                                        i.icon-linkedin.icon-2x
-
-
                 .container.row
-                
-                      
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Marc Liebrich --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/marc.jpg', alt='Marc Liebrich')
-                            .image-hover
-                                img(src='/images/team/marc.jpg', alt='Marc Liebrich')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='https://www.linkedin.com/in/marc-liebrich/',target='_blank')
-                                                i.icon-linkedin.icon-3x
-                        h5 Marc Liebrich
-                        p  Membre du Conseil d’Administration
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='https://www.linkedin.com/in/marc-liebrich/',target='_blank')
-                                        i.icon-linkedin.icon-2x
-  
-            
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Rémy Perla --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/remy.jpg', alt='Rémy Perla')
-                            .image-hover
-                                img(src='/images/team/remy.jpg', alt='Rémy Perla')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='https://www.facebook.com/remy.perla',target='_blank')
-                                                i.icon-facebook.icon-3x
-                                        li
-                                            a(href='https://www.linkedin.com/in/remy-perla/',target='_blank')
-                                                i.icon-linkedin.icon-3x
-                        h5 Rémy Perla
-                        p Assesseur
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='https://www.facebook.com/remy.perla',target='_blank')
-                                        i.icon-facebook.icon-2x
-                                li
-                                    a(href='https://www.linkedin.com/in/remy-perla/',target='_blank')
-                                        i.icon-linkedin.icon-2x
-
-
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Florian Petit --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/florianp.jpg', alt='Florian Petit')
-                            .image-hover
-                                img(src='/images/team/florianp.jpg', alt='Florian Petit')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='https://fr.linkedin.com/in/florian-petit-b9b41929',target='_blank')
-                                                i.icon-linkedin.icon-3x                  
-                        h5 Florian Petit
-                        p Assesseur
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='https://fr.linkedin.com/in/florian-petit-b9b41929',target='_blank')
-                                        i.icon-linkedin.icon-2x
-
-
-
-                .container.row
-
-                
                     .col-xs-12
                         h2.team-title Permanents 
                 
