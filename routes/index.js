@@ -3,8 +3,27 @@
  * GET home page.
  */
 
+function chunkArrayInGroups(arr, size) {
+    var myArray = [];
+    for(var i = 0; i < arr.length; i += size) {
+      myArray.push(arr.slice(i, i+size));
+    }
+    return myArray;
+}
+
+function randomizeArray(arr) {
+    return arr.sort((a, b) => 0.5 - Math.random());
+}
+
+const globals = {
+    chunkArrayInGroups,
+    randomizeArray
+}
+
+const caMembers = require('./ca.json')
+
 exports.index = function(req, res){
-  res.render('index', { title: 'Alsace Digitale' });
+  res.render('index', {...globals, title: 'Alsace Digitale', caMembers: caMembers  });
 };
 
 exports.showWork = function( req, res ) {
