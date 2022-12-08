@@ -1,5 +1,62 @@
 extends layout
 
+mixin memberVignette(caMember)
+    - var memberImage = caMember.image === undefined ? '/images/team/you.jpg' : '/images/team/'+caMember.image
+    .member-photo
+        .image
+            img(src=memberImage, alt=caMember.name)
+        .image-hover
+            img(src=memberImage, alt=caMember.name)
+            if caMember.social
+                .member-hover.hidden-xs.hidden-sm
+                    .list-container
+                        ul.list-inline.social
+                            if caMember.social.facebook
+                                li
+                                    a(href='http://facebook.com/'+caMember.social.facebook,target='_blank')
+                                        i.icon-facebook.icon-3x
+                            if caMember.social.twitter
+                                li
+                                    a(href='http://twitter.com/'+caMember.social.twitter,target='_blank')
+                                        i.icon-twitter.icon-3x
+                            if caMember.social.linkedin
+                                li
+                                    a(href='http://www.linkedin.com/in/'+caMember.social.linkedin,target='_blank')
+                                        i.icon-linkedin.icon-3x
+                            if caMember.social.web
+                                li
+                                    a(href=caMember.social.web,target='_blank')
+                                        i.icon-link.icon-3x
+                            if caMember.social.email
+                                li
+                                    a(href='mailto:'+caMember.social.email,target='_blank')
+                                        i.icon-envelope.icon-3x
+    h5 #{caMember.name}
+    p #{caMember.job}
+    if caMember.social
+        .list-container.visible-xs.visible-sm
+            ul.list-inline
+                if caMember.social.facebook
+                    li
+                        a(href='http://facebook.com/'+caMember.social.facebook,target='_blank')
+                            i.icon-facebook.icon-2x
+                if caMember.social.twitter
+                    li
+                        a(href='http://twitter.com/'+caMember.social.twitter,target='_blank')
+                            i.icon-twitter.icon-2x
+                if caMember.social.linkedin
+                    li
+                        a(href='http://www.linkedin.com/in/'+caMember.social.linkedin,target='_blank')
+                            i.icon-linkedin.icon-2x
+                if caMember.social.web
+                    li
+                        a(href=caMember.social.web,target='_blank')
+                            i.icon-link.icon-2x
+                if caMember.social.email
+                    li
+                        a(href='mailto:'+caMember.social.email,target='_blank')
+                            i.icon-envelope.icon-2x
+
 block content
     body.pictured
         #page
@@ -249,206 +306,24 @@ block content
                 .container.row
                     .col-xs-12
                         h2.team-title Membres du Conseil d'Administration
-                
-                    each caRow in chunkArrayInGroups(randomizeArray(caMembers),4)
+
+                    each caRow in chunkArrayInGroups(randomizeArray(team.ca),4)
                         .container.row
                             each caMember in caRow
-                                - var memberImage = caMember.image === undefined ? '/images/team/you.jpg' : '/images/team/'+caMember.image
                                 .col-xs-6.col-sm-6.col-md-3.member <!-- #{caMember.name} -->
-                                    .member-photo
-                                        .image
-                                            img(src=memberImage, alt=caMember.name)
-                                        .image-hover
-                                            img(src=memberImage, alt=caMember.name)
-                                        if caMember.social
-                                            .member-hover.hidden-xs.hidden-sm
-                                                .list-container
-                                                    ul.list-inline.social
-                                                                        if caMember.social.facebook
-                                                        li
-                                                                                a(href='http://facebook.com/'+caMember.social.facebook,target='_blank')
-                                                                i.icon-facebook.icon-3x
-                                                                        if caMember.social.twitter
-                                                        li
-                                                                                a(href='http://twitter.com/'+caMember.social.twitter,target='_blank')
-                                                                i.icon-twitter.icon-3x
-                                                                        if caMember.social.linkedin
-                                                        li
-                                                                                a(href='http://www.linkedin.com/in/'+caMember.social.linkedin,target='_blank')
-                                                                i.icon-linkedin.icon-3x
-                                                                        if caMember.social.web
-                                                        li
-                                                                                a(href=caMember.social.web,target='_blank')
-                                                                i.icon-link.icon-3x
-                                    h5 #{caMember.name}
-                                    p #{caMember.job}
-                                    if caMember.social
-                                        .list-container.visible-xs.visible-sm
-                                            ul.list-inline
-                                                if caMember.social.facebook
-                                                    li
-                                                        a(href='http://facebook.com/'+caMember.social.facebook,target='_blank')
-                                                        i.icon-facebook.icon-2x
-                                                if caMember.social.twitter
-                                                    li
-                                                        a(href='http://twitter.com/'+caMember.social.twitter,target='_blank')
-                                                        i.icon-twitter.icon-2x
-                                                if caMember.social.linkedin
-                                                    li
-                                                        a(href='http://www.linkedin.com/in/'+caMember.social.linkedin,target='_blank')
-                                                        i.icon-linkedin.icon-2x
-                                                if caMember.social.web
-                                                    li
-                                                        a(href=caMember.social.web,target='_blank')
-                                                        i.icon-link.icon-2x
-                                
+                                    +memberVignette(caMember)
+                            
 
                 .container.row
                     .col-xs-12
                         h2.team-title Permanents 
                 
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Sophie Charpentier--> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/sophie.jpg', alt='Sophie Charpentier')
-                            .image-hover
-                                img(src='/images/team/sophie.jpg', alt='Sophie Charpentier')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='mailto:sophie.charpentier@alsacedigitale.org',target='_blank')
-                                                i.icon-envelope.icon-3x
-                        h5 Sophie Charpentier
-                        p Chargée d'espace de coworking
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='mailto:sophie.charpentier@alsacedigitale.org',target='_blank')
-                                        i.icon-envelope.icon-2x
+                    each permRow in chunkArrayInGroups(randomizeArray(team.permanents),4)
+                        .container.row
+                            each permMember in permRow
+                                .col-xs-6.col-sm-6.col-md-3.member <!-- #{permMember.name} -->
+                                    +memberVignette(permMember)
 
-
-
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Catherine Mosser --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/catherine.jpg', alt='Catherine Mosser')
-                            .image-hover
-                                img(src='/images/team/catherine.jpg', alt='Catherine Mosser')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='mailto:catherine.mosser@alsacedigitale.org',target='_blank')
-                                                i.icon-envelope.icon-3x
-                        h5 Catherine Mosser
-                        p Coordinatrice de Projets
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='mailto:catherine.mosser@alsacedigitale.org',target='_blank')
-                                        i.icon-envelope.icon-2x
-
-
-
-
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Said Besso --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/said.jpg', alt='Said Besso')
-                            .image-hover
-                                img(src='/images/team/said.jpg', alt='Said Besso')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='https://www.linkedin.com/in/sa%C3%AFd-besso-13429b94/',target='_blank')
-                                                i.icon-linkedin.icon-3x
-                        h5 Said Besso
-                        p Médiateur Numérique
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='https://www.linkedin.com/in/sa%C3%AFd-besso-13429b94/',target='_blank')
-                                        i.icon-linkedin.icon-2x
-
-
-
-
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Leila Zaidi --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/leila.jpg', alt='Leila Zaidi')
-                            .image-hover
-                                img(src='/images/team/leila.jpg', alt='Leila Zaidi')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='mailto:leila.zaidi@alsacedigitale.org',target='_blank')
-                                                i.icon-envelope.icon-3x
-                        h5 Leila Zaidi
-                        p Chargée de Projet Innovation
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='mailto:leila.zaidi@alsacedigitale.org',target='_blank')
-                                        i.icon-envelope.icon-2x
-
-
-
-
-                .container.row
-
-                
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Cecilia Di Pietro --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/cecilia.jpg', alt='Cecilia Di Pietro')
-                            .image-hover
-                                img(src='/images/team/cecilia.jpg', alt='Cecilia Di Pietro')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='https://twitter.com/DiPietroCecilia',target='_blank')
-                                                i.icon-twitter.icon-3x
-                                        li
-                                            a(href='https://www.linkedin.com/in/cecilia-di-pietro/',target='_blank')
-                                                i.icon-linkedin.icon-3x
-                        h5 Cecilia Di Pietro
-                        p Chargée de Projet Innovation
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='https://twitter.com/DiPietroCecilia',target='_blank')
-                                        i.icon-twitter.icon-2x
-                                li
-                                    a(href='https://www.linkedin.com/in/cecilia-di-pietro/',target='_blank')
-                                        i.icon-linkedin.icon-2x
-
-                
-                    .col-xs-6.col-sm-6.col-md-3.member <!-- Lisa Krill --> 
-                        .member-photo
-                            .image
-                                img(src='/images/team/lisa.jpg', alt='Lisa Krill')
-                            .image-hover
-                                img(src='/images/team/lisa.jpg', alt='Lisa Krill')
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                        li
-                                            a(href='https://www.linkedin.com/in/lisa-krill-165925194/',target='_blank')
-                                                i.icon-linkedin.icon-3x
-                        h5 Lisa Krill
-                        p Chargée de communication
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
-                                li
-                                    a(href='https://www.linkedin.com/in/lisa-krill-165925194/',target='_blank')
-                                        i.icon-linkedin.icon-2x
-
-    
 
             section#contacts
                 .row

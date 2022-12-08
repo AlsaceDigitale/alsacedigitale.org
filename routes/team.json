@@ -1,0 +1,94 @@
+{
+    "ca": [
+        {
+            "name": "Yannick JOST",
+            "image": "yannick.jpg",
+            "job": "Président, VP \"Hacking & DIY\"",
+            "social": {
+                "facebook": "yannick.jost",
+                "twitter": "yanjost",
+                "linkedin": "yannick.jost"
+            }
+        },
+        {
+            "name": "Florian PETIT",
+            "image": "florianp.jpg",
+            "job": "Assesseur, Membre du board HIC",
+            "social": {
+                "linkedin": "florian-petit-b9b41929"
+            }
+        },
+        {
+            "name": "Emmanuelle EBEL-JOST",
+            "image": "emmanuelle.jpg",
+            "job": "Vice-présidente \"Arts et Culture numérique\"",
+            "social": {
+                "linkedin": "yannick.jost",
+                "web": "http://www.adoc-metis.com"
+            }
+        },
+        {
+            "name": "Marc LIEBRICH",
+            "image": "marc.jpg",
+            "job": "Assesseur",
+            "social": {
+                "linkedin": "marc-liebrich"
+            }
+        },
+        {
+            "name": "Carole LASCOMBES",
+            "job": "Trésorière"
+        },
+        {
+            "name": "Farid MARIANI",
+            "job": "Assesseur, VP Startups"
+        },
+        {
+            "name": "Lucas LETT",
+            "job": "Secrétaire-adjoint"
+        }
+    ],
+    "permanents": [
+        {
+            "name": "Catherine MOSSER",
+            "image": "catherine.jpg",
+            "job": "Directrice Opérationnelle",
+            "social": {
+                "email": "catherine.mosser@alsacedigitale.org"
+            }
+        },
+        {
+            "name": "Aurélia RICKA",
+            "job": "Assistante Administrative",
+            "social": {
+                "email": "contact@alsacedigitale.org"
+            }
+        },
+        {
+            "name": "Said BESSO",
+            "image": "said.jpg",
+            "job": "Médiateur Numérique",
+            "social": {
+                "linkedin": "sa%C3%AFd-besso-13429b94"
+            }
+        },
+        {
+            "name": "Nicolas SCHROETTER",
+            "job": "Médiateur Numérique"
+        },
+        {
+            "name": "Roger MORI",
+            "job": "Chargé de Projet Innovation"
+        },
+        {
+            "name": "Cecilia DI PIETRO",
+            "image": "cecilia.jpg",
+            "job": "Chargée de Projet Innovation",
+            "social": {
+                "linkedin": "cecilia-di-pietro",
+                "twitter": "DiPietroCecilia"
+            }
+        }
+        
+    ]
+}

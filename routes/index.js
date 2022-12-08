@@ -20,10 +20,10 @@ const globals = {
     randomizeArray
 }
 
-const caMembers = require('./ca.json')
+const team = require('./team.json')
 
 exports.index = function(req, res){
-  res.render('index', {...globals, title: 'Alsace Digitale', caMembers: caMembers  });
+  res.render('index', {...globals, title: 'Alsace Digitale', team: team  });
 };
 
 exports.showWork = function( req, res ) {
