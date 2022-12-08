@@ -253,54 +253,55 @@ block content
                     each caRow in chunkArrayInGroups(randomizeArray(caMembers),4)
                         .container.row
                             each caMember in caRow
+                                - var memberImage = caMember.image === undefined ? '/images/team/you.jpg' : '/images/team/'+caMember.image
                                 .col-xs-6.col-sm-6.col-md-3.member <!-- #{caMember.name} -->
-                        .member-photo
-                            .image
-                                            img(src='/images/team/'+(caMember.image || 'you.jpg'), alt=caMember.name)
-                            .image-hover
-                                            img(src='/images/team/'+(caMember.image || 'you.jpg'), alt=caMember.name)
+                                    .member-photo
+                                        .image
+                                            img(src=memberImage, alt=caMember.name)
+                                        .image-hover
+                                            img(src=memberImage, alt=caMember.name)
                                         if caMember.social
-                            .member-hover.hidden-xs.hidden-sm
-                                .list-container
-                                    ul.list-inline.social
-                                                        if caMember.social.facebook
-                                        li
-                                                                a(href='http://facebook.com/'+caMember.social.facebook,target='_blank')
-                                                i.icon-facebook.icon-3x
-                                                        if caMember.social.twitter
-                                        li
-                                                                a(href='http://twitter.com/'+caMember.social.twitter,target='_blank')
-                                                i.icon-twitter.icon-3x
-                                                        if caMember.social.linkedin
-                                        li
-                                                                a(href='http://www.linkedin.com/in/'+caMember.social.linkedin,target='_blank')
-                                                i.icon-linkedin.icon-3x
-                                                        if caMember.social.web
-                                        li
-                                                                a(href=caMember.social.web,target='_blank')
-                                                i.icon-link.icon-3x
+                                            .member-hover.hidden-xs.hidden-sm
+                                                .list-container
+                                                    ul.list-inline.social
+                                                                        if caMember.social.facebook
+                                                        li
+                                                                                a(href='http://facebook.com/'+caMember.social.facebook,target='_blank')
+                                                                i.icon-facebook.icon-3x
+                                                                        if caMember.social.twitter
+                                                        li
+                                                                                a(href='http://twitter.com/'+caMember.social.twitter,target='_blank')
+                                                                i.icon-twitter.icon-3x
+                                                                        if caMember.social.linkedin
+                                                        li
+                                                                                a(href='http://www.linkedin.com/in/'+caMember.social.linkedin,target='_blank')
+                                                                i.icon-linkedin.icon-3x
+                                                                        if caMember.social.web
+                                                        li
+                                                                                a(href=caMember.social.web,target='_blank')
+                                                                i.icon-link.icon-3x
                                     h5 #{caMember.name}
                                     p #{caMember.job}
                                     if caMember.social
-                        .list-container.visible-xs.visible-sm
-                            ul.list-inline
+                                        .list-container.visible-xs.visible-sm
+                                            ul.list-inline
                                                 if caMember.social.facebook
-                                li
+                                                    li
                                                         a(href='http://facebook.com/'+caMember.social.facebook,target='_blank')
-                                        i.icon-facebook.icon-2x
+                                                        i.icon-facebook.icon-2x
                                                 if caMember.social.twitter
-                                li
+                                                    li
                                                         a(href='http://twitter.com/'+caMember.social.twitter,target='_blank')
-                                        i.icon-twitter.icon-2x
+                                                        i.icon-twitter.icon-2x
                                                 if caMember.social.linkedin
-                                li
+                                                    li
                                                         a(href='http://www.linkedin.com/in/'+caMember.social.linkedin,target='_blank')
-                                        i.icon-linkedin.icon-2x
+                                                        i.icon-linkedin.icon-2x
                                                 if caMember.social.web
-                                li
+                                                    li
                                                         a(href=caMember.social.web,target='_blank')
-                                        i.icon-link.icon-2x
-                
+                                                        i.icon-link.icon-2x
+                                
 
                 .container.row
                     .col-xs-12
