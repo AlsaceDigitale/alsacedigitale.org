@@ -3,12 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "develop": "node-dev app.js"
   },
   "dependencies": {
+    "easy-livereload": "^1.4.4",
     "express": "~3.4.0",
     "jade": "~0.35.0",
     "less-middleware": "~0.1.12",
+    "node-dev": "^7.4.3",
     "sendgrid": "^1.9.2"
   }
 }
