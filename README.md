@@ -2,20 +2,13 @@
 
 ## Prérequis
 
-    node.js
-    npm
+Tout le développement peut se faire localement grâce à [Tilt](https://tilt.dev/)
+
 
 ## Environnement de développement
 
-    npm install
+`tilt up`
 
-    npm install -g nodemon
-
-
-## Comment développer ?
-
-    nodemon app.js
-
-Hack hack hack
+et voilà vous pouvez modifier le code localement
 
 Le site se recharge tout seul lors d'une modification
