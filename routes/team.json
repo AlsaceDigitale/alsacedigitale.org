@@ -28,14 +28,6 @@
             }
         },
         {
-            "name": "Marc LIEBRICH",
-            "image": "marc.jpg",
-            "job": "Assesseur",
-            "social": {
-                "linkedin": "marc-liebrich"
-            }
-        },
-        {
             "name": "Carole LASCOMBES",
             "job": "Trésorière"
         },
@@ -58,13 +50,6 @@
             }
         },
         {
-            "name": "Aurélia RICKA",
-            "job": "Assistante Administrative",
-            "social": {
-                "email": "contact@alsacedigitale.org"
-            }
-        },
-        {
             "name": "Said BESSO",
             "image": "said.jpg",
             "job": "Médiateur Numérique",
@@ -79,15 +64,6 @@
         {
             "name": "Roger MORI",
             "job": "Chargé de Projet Innovation"
-        },
-        {
-            "name": "Cecilia DI PIETRO",
-            "image": "cecilia.jpg",
-            "job": "Chargée de Projet Innovation",
-            "social": {
-                "linkedin": "cecilia-di-pietro",
-                "twitter": "DiPietroCecilia"
-            }
         }
         
     ]
