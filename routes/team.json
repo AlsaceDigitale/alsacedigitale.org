@@ -11,6 +11,11 @@
             }
         },
         {
+            "name": "David LEGRAND",
+            "image": "davidl.jpg",
+            "job": "Assesseur"
+        },
+        {
             "name": "Florian PETIT",
             "image": "florianp.jpg",
             "job": "Assesseur, Membre du board HIC",
@@ -19,25 +24,22 @@
             }
         },
         {
-            "name": "Emmanuelle EBEL-JOST",
-            "image": "emmanuelle.jpg",
-            "job": "Vice-présidente \"Arts et Culture numérique\"",
+            "name": "Julie MULOT",
+            "job": "Assesseure",
+            "image": "julie.jpg",
             "social": {
-                "linkedin": "yannick.jost",
-                "web": "http://www.adoc-metis.com"
+                "linkedin": "julie-mulot"
             }
         },
         {
-            "name": "Carole LASCOMBES",
-            "job": "Trésorière"
-        },
-        {
             "name": "Farid MARIANI",
-            "job": "Assesseur, VP Startups"
+            "job": "Assesseur, VP Startups",
+            "image": "farid.jpg"
         },
         {
             "name": "Lucas LETT",
-            "job": "Secrétaire-adjoint"
+            "job": "Secrétaire",
+            "image": "lucas.jpg"
         }
     ],
     "permanents": [
@@ -60,11 +62,6 @@
         {
             "name": "Nicolas SCHROETTER",
             "job": "Médiateur Numérique"
-        },
-        {
-            "name": "Roger MORI",
-            "job": "Chargé de Projet Innovation"
-        }
-        
+        }        
     ]
 }
