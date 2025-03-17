@@ -10,7 +10,7 @@ exports.redirect = function (req, res) {
 
         // if the og:image is relative, make it absolute
         if (redirectConfig.image && redirectConfig.image.indexOf('http') != 0) {
-            redirectConfig.og.image = req.protocol + '://' + req.get('host') + redirectConfig.og.image;
+            redirectConfig.image = req.protocol + '://' + req.get('host') + redirectConfig.image;
         }
 
         if (redirectConfig.method == 'meta-refresh') {
