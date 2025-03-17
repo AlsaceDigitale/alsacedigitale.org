@@ -9,13 +9,15 @@ var user = require('./routes/user');
 var message = require( './routes/message');
 var http = require('http');
 var path = require('path');
+var pug = require('pug');
+
 
 var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
