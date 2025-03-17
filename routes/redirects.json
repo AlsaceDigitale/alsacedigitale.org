@@ -3,15 +3,19 @@
         "url": "https://transplanerhp.wixsite.com/harrypotter",
         "method": "embed",
         "delay": 0.5,
+        "title": "Cassini Hackathon",
         "description": "Welcome to the 2025 Cassini Hackathon in Strasbourg!",
-        "keywords": "Cassini, hackathon, Strasbourg, 2025"
+        "keywords": "Cassini, hackathon, Strasbourg, 2025",
+        "image": "/images/social/cassini.jpg"
     },
     "/cassini-refresh": {
         "url": "https://transplanerhp.wixsite.com/harrypotter",
         "method": "meta-refresh",
         "delay": 0.5,
+        "title": "Cassini Hackathon",
         "description": "Welcome to the 2025 Cassini Hackathon in Strasbourg!",
-        "keywords": "Cassini, hackathon, Strasbourg, 2025"
+        "keywords": "Cassini, hackathon, Strasbourg, 2025",
+        "image": "/images/social/cassini.jpg"
     },
     "/cassini-redirect": {
         "url": "https://transplanerhp.wixsite.com/harrypotter",
