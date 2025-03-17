@@ -10,6 +10,7 @@ var message = require( './routes/message');
 var http = require('http');
 var path = require('path');
 var pug = require('pug');
+var redirect = require("./routes/redirect");
 
 
 var app = express();
@@ -31,6 +32,10 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+// redirector for Cassini
+app.get('/cassini-embed', redirect.redirect );
+app.get('/cassini-refresh', redirect.redirect );
+app.get('/cassini-redirect', redirect.redirect );
 app.get('/work/:id', routes.showWork );
 app.get('/users', user.list);
 app.post('/send/msg', message.send )

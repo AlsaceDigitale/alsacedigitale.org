@@ -1,0 +1,10 @@
+extends layout
+
+block meta
+    meta(name='description', content=config.description)
+    meta(name='keywords', content=config.keywords)
+    meta(name='robots', content='index, follow')      
+
+block body
+    body
+        iframe(src=config.url, frameborder="0", width="100%", height="100%") 

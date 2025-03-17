@@ -1,0 +1,14 @@
+extends layout
+
+block meta
+    meta(name='description', content=config.description)
+    meta(name='keywords', content=config.keywords)
+    meta(name='robots', content='index, follow') 
+    meta(http-equiv='refresh', content=config.delay+";url="+config.url)     
+
+block body
+    p You are being redirected to #{config.url}
+    script.
+        setTimeout(function() {
+            window.location.href = '#{config.url}';
+        }, #{config.delay}*1000);
