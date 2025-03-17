@@ -1,20 +1,20 @@
 {
     "/cassini-embed": {
-        "url": "http://neverssl.com/",
+        "url": "https://transplanerhp.wixsite.com/harrypotter",
         "method": "embed",
         "delay": 0.5,
         "description": "Welcome to the 2025 Cassini Hackathon in Strasbourg!",
         "keywords": "Cassini, hackathon, Strasbourg, 2025"
     },
     "/cassini-refresh": {
-        "url": "http://neverssl.com/",
+        "url": "https://transplanerhp.wixsite.com/harrypotter",
         "method": "meta-refresh",
         "delay": 0.5,
         "description": "Welcome to the 2025 Cassini Hackathon in Strasbourg!",
         "keywords": "Cassini, hackathon, Strasbourg, 2025"
     },
     "/cassini-redirect": {
-        "url": "http://neverssl.com/",
+        "url": "https://transplanerhp.wixsite.com/harrypotter",
         "method": "redirect",
         "code": 302
     }
