@@ -9,7 +9,7 @@ exports.redirect = function (req, res) {
         console.log(redirectConfig)
 
         // if the og:image is relative, make it absolute
-        if (redirectConfig.og && redirectConfig.og.image && redirectConfig.og.image.indexOf('http') != 0) {
+        if (redirectConfig.image && redirectConfig.image.indexOf('http') != 0) {
             redirectConfig.og.image = req.protocol + '://' + req.get('host') + redirectConfig.og.image;
         }
 
