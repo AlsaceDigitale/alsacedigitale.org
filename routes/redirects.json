@@ -1,6 +1,6 @@
 {
     "/cassini-embed": {
-        "url": "https://transplanerhp.wixsite.com/harrypotter",
+        "url": "https://alsacedigitale.wixsite.com/cassinihackathonstra",
         "method": "embed",
         "delay": 0.5,
         "title": "Cassini Hackathon",
@@ -9,7 +9,7 @@
         "image": "/images/social/cassini.jpg"
     },
     "/cassini-refresh": {
-        "url": "https://transplanerhp.wixsite.com/harrypotter",
+        "url": "https://alsacedigitale.wixsite.com/cassinihackathonstra",
         "method": "meta-refresh",
         "delay": 0.5,
         "title": "Cassini Hackathon",
@@ -18,7 +18,7 @@
         "image": "/images/social/cassini.jpg"
     },
     "/cassini-redirect": {
-        "url": "https://transplanerhp.wixsite.com/harrypotter",
+        "url": "https://alsacedigitale.wixsite.com/cassinihackathonstra",
         "method": "redirect",
         "code": 302
     }
