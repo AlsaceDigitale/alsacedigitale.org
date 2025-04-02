@@ -9,9 +9,9 @@
   "dependencies": {
     "easy-livereload": "^1.4.4",
     "express": "~3.4.0",
-    "jade": "~0.35.0",
     "less-middleware": "~0.1.12",
     "node-dev": "^7.4.3",
+    "pug": "^3.0.3",
     "sendgrid": "^1.9.2"
   }
 }

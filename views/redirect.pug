@@ -1,0 +1,21 @@
+extends layout
+
+block meta
+    meta(name='title', content=config.title)
+    meta(name='description', content=config.description)
+    meta(name='keywords', content=config.keywords)
+    meta(name='robots', content='index, follow')
+    meta(property='og:title', content=config.title)
+    meta(property='og:description', content=config.description)
+    meta(property='og:image', content=config.image)
+    meta(property='og:url', content=config.url)
+    meta(property='og:type', content='website')
+    meta(property='og:site_name', content=config.title)
+    meta(http-equiv='refresh', content=config.delay+";url="+config.url)     
+
+block body
+    p You are being redirected to #{config.url}
+    script.
+        setTimeout(function() {
+            window.location.href = '#{config.url}';
+        }, #{config.delay}*1000);
