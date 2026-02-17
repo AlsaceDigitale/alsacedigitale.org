@@ -1,5 +1,11 @@
 # Alsacedigitale.org
 
+## Statut du projet
+
+Ce site est en phase de fin de vie et sera remplace prochainement.
+Les evolutions fonctionnelles et les migrations majeures de dependances ne sont plus prioritaires.
+Les mises a jour automatiques Dependabot sont desactivees pour limiter le risque de regression pendant cette phase.
+
 ## Prérequis
 
 Tout le développement peut se faire localement grâce à [Tilt](https://tilt.dev/)
