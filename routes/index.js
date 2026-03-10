@@ -21,9 +21,10 @@ const globals = {
 }
 
 const team = require('./team.json')
+const config = require('../config')
 
 exports.index = function(req, res){
-  res.render('index', {...globals, title: 'Alsace Digitale', team: team  });
+  res.render('index', {...globals, title: 'Alsace Digitale', team: team, adhesionUrl: config.adhesionUrl });
 };
 
 exports.showWork = function( req, res ) {

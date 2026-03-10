@@ -1,4 +1,10 @@
 {
+    "/adhesion": {
+        "method": "redirect",
+        "code": 302,
+        "urlEnv": "ADHESION_URL",
+        "urlConfig": "adhesionUrl"
+    },
     "/cassini": {
         "url": "https://alsacedigitale.wixsite.com/cassinihackathonstra",
         "method": "meta-refresh",

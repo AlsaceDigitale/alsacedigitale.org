@@ -1,11 +1,27 @@
 var redirects = require('./redirects.json');
+var config = require('../config');
+
+function resolveRedirectUrl(redirectConfig) {
+    if (!redirectConfig.urlEnv) {
+        return redirectConfig.url;
+    }
+
+    var fallbackUrl = redirectConfig.url;
+
+    if (redirectConfig.urlConfig && config[redirectConfig.urlConfig]) {
+        fallbackUrl = config[redirectConfig.urlConfig];
+    }
+
+    return config.envOrDefault(redirectConfig.urlEnv, fallbackUrl);
+}
 
 
 exports.redirect = function (req, res) {
     var path = req.path;
     if (redirects[path]) {
-        var redirectConfig = redirects[path];
+        var redirectConfig = Object.assign({}, redirects[path]);
         console.log("found redirect for", path);
+        redirectConfig.url = resolveRedirectUrl(redirectConfig);
         console.log(redirectConfig)
 
         // if the og:image is relative, make it absolute

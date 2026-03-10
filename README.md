@@ -21,6 +21,19 @@ Le site se recharge tout seul lors d'une modification
 
 ## Configuration
 
+### URL d'adhésion
+
+L'URL d'adhésion est configurable via la variable d'environnement `ADHESION_URL`.
+
+Si elle n'est pas définie, le site utilise par défaut la campagne HelloAsso 2026 :
+
+`https://www.helloasso.com/associations/alsace-digitale/adhesions/membre-alsace-digitale-2026`
+
+Cette valeur est utilisée :
+
+- pour les liens d'adhésion affichés sur la page d'accueil ;
+- pour la redirection `GET /adhesion`.
+
 ### Redirection
 
 La redirection se configure dans le fichier `routes/redirects.json`
@@ -47,6 +60,15 @@ La redirection se configure dans le fichier `routes/redirects.json`
         "url": "http://neverssl.com/",
         "method": "redirect",
         "code": 302
+    },
+    "/adhesion": {
+        "method": "redirect",
+        "code": 302,
+        "urlEnv": "ADHESION_URL",
+        "urlConfig": "adhesionUrl"
     }
 }
 ```
+
+Le champ `urlEnv` permet de lire une URL depuis une variable d'environnement.
+Le champ `urlConfig` permet d'utiliser la valeur exposée par `config.js` comme repli si la variable n'est pas définie.
