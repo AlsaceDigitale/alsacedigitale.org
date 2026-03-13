@@ -13,5 +13,12 @@
         "description": "Welcome to the 2025 Cassini Hackathon in Strasbourg!",
         "keywords": "Cassini, hackathon, Strasbourg, 2025",
         "image": "/images/social/cassini.jpg"
+    },
+    "/robotechgirls": {
+        "url": "https://pdf-to-web-links.lovable.app/",
+        "method": "embed",
+        "title": "Robotech Girls",
+        "description": "Robotech Girls Day",
+        "keywords": "Robotech Girls Day"
     }
 }
