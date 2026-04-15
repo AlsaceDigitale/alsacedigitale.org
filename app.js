@@ -57,6 +57,7 @@ app.get('/', routes.index);
 app.get('/cassini', redirect.redirect );
 app.get('/adhesion', redirect.redirect );
 app.get('/robotechgirls', redirect.redirect );
+app.get('/semaineia', redirect.redirect );
 app.get('/work/:id', routes.showWork );
 app.get('/users', user.list);
 app.post('/send/msg', message.send )
