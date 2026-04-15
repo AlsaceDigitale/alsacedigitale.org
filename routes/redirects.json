@@ -20,5 +20,12 @@
         "title": "Robotech Girls",
         "description": "Robotech Girls Day",
         "keywords": "Robotech Girls Day"
+    },
+    "/semaineia": {
+        "url": "https://alsace-semaine-ia.lovable.app",
+        "method": "embed",
+        "title": "Semaine de l'IA en Alsace",
+        "description": "Semaine de l'Intelligence Artificielle en Alsace",
+        "keywords": "IA, Intelligence Artificielle, Alsace, semaine"
     }
 }
