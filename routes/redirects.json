@@ -21,11 +21,6 @@
         "description": "Robotech Girls Day",
         "keywords": "Robotech Girls Day"
     },
-    "/robokraft": {
-        "url": "/robotkraft",
-        "method": "redirect",
-        "code": 301
-    },
     "/robotkraft": {
         "url": "https://data-event-magnet.lovable.app",
         "method": "embed",
