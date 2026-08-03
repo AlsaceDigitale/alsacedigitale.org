@@ -21,6 +21,13 @@
         "description": "Robotech Girls Day",
         "keywords": "Robotech Girls Day"
     },
+    "/robokraft": {
+        "url": "https://data-event-magnet.lovable.app",
+        "method": "embed",
+        "title": "Robokraft",
+        "description": "Événement Robokraft",
+        "keywords": "Robokraft"
+    },
     "/semaineia": {
         "url": "https://alsace-semaine-ia.lovable.app",
         "method": "embed",
