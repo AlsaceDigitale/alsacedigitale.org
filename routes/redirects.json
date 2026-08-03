@@ -21,6 +21,13 @@
         "description": "Robotech Girls Day",
         "keywords": "Robotech Girls Day"
     },
+    "/robokraft": {
+        "url": "https://data-event-magnet.lovable.app",
+        "method": "embed",
+        "title": "RoboKraft 2026 — Challenge de robotique et d’IA",
+        "description": "Du 2 au 4 octobre 2026, RoboKraft réunit des équipes autour de défis de robotique, vision par ordinateur et intelligence artificielle, inspirés de l’exploration spatiale.",
+        "keywords": "RoboKraft, challenge robotique, intelligence artificielle, vision par ordinateur, bras robotique, LeRobot, LeKiwi, exploration spatiale, octobre 2026"
+    },
     "/semaineia": {
         "url": "https://alsace-semaine-ia.lovable.app",
         "method": "embed",
