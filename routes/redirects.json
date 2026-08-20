@@ -34,5 +34,12 @@
         "title": "Semaine de l'IA en Alsace",
         "description": "Semaine de l'Intelligence Artificielle en Alsace",
         "keywords": "IA, Intelligence Artificielle, Alsace, semaine"
+    },
+     "/mixitedanslatech": {
+        "url": "https://ditch-bias-event.lovable.app",
+        "method": "embed",
+        "title": "Dépasser les biais et les clichés",
+        "description": "Evènement autour de la mixité dans la tech",
+        "keywords": "Mixité, Productivité, Grand Est, Debuting"
     }
 }
