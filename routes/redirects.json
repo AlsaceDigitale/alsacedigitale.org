@@ -41,5 +41,12 @@
         "title": "Dépasser les biais et les clichés",
         "description": "Evènement autour de la mixité dans la tech",
         "keywords": "Mixité, Productivité, Grand Est, Debuting"
+    },
+    "/stage-observation": {
+    "url": "https://code-unleashed-teen.lovable.app",
+    "method": "embed",
+    "title": "Stage d'observation - Alsace Digitale",
+    "description": "Découvrez des métiers du numérique et profitez d'un apprentissage de la programmation en participant au stage d'observation organisé par Avenir Numérique Alsace - Alsace Digitale 🚀📲",
+    "keywords": "Stage d'observation, Numérique, Programmation, Métiers du numérique, Jeunesse, Alsace Digitale, Avenir Numérique Alsace"
     }
 }

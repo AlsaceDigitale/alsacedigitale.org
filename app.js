@@ -60,6 +60,7 @@ app.get('/robotechgirls', redirect.redirect );
 app.get('/robotkraft', redirect.redirect );
 app.get('/semaineia', redirect.redirect );
 app.get('/mixitedanslatech', redirect.redirect);
+app.get('/stage-observation', redirect.redirect);
 app.get('/work/:id', routes.showWork );
 app.get('/users', user.list);
 app.post('/send/msg', message.send )
