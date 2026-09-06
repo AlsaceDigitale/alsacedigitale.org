@@ -100,3 +100,30 @@ La redirection se configure dans le fichier `routes/redirects.json`
 
 Le champ `urlEnv` permet de lire une URL depuis une variable d'environnement.
 Le champ `urlConfig` permet d'utiliser la valeur exposée par `config.js` comme repli si la variable n'est pas définie.
+
+### Bandeau d'annonce (banner)
+
+Le site peut afficher un bandeau fixe en haut de page (ex. promotion d'un évènement), configuré dans `routes/banner.json` :
+
+```json
+{
+    "enabled": true,
+    "icon": "icon-rocket",
+    "highlight": "RobotKraft 2026",
+    "text": " — Challenge de robotique & IA à Strasbourg, du 2 au 4 octobre.",
+    "ctaLabel": "Je découvre",
+    "ctaUrl": "/robotkraft",
+    "dismissKey": "ad-robotkraft-banner-dismissed-v1"
+}
+```
+
+- `enabled` : `false` masque complètement le bandeau (aucun DOM généré).
+- `icon` : classe de l'iconfont du site (voir `public/css/font-awesome.min.css`, ex. `icon-rocket`), optionnelle.
+- `highlight` : texte mis en avant en gras (doré), optionnel.
+- `text` : texte du message, affiché après `highlight`.
+- `ctaLabel` / `ctaUrl` : libellé et lien du bouton d'action ; si `ctaUrl` est absent, le bouton n'est pas affiché.
+- `dismissKey` : clé `localStorage` utilisée pour retenir la fermeture du bandeau par l'internaute. **Changer cette valeur** à chaque nouvelle campagne pour que le bandeau réapparaisse même chez les visiteurs ayant fermé une précédente version.
+
+Le bandeau est injecté dans `views/layout.pug` et n'apparaît que sur les pages qui utilisent ce layout (page d'accueil, redirections `embed`/`meta-refresh`, etc. — voir `routes/redirect.js`). Les anciennes pages `work/:id` (`barcamp-alsace`, `hacksxb`, ...) n'étendent pas `layout.pug` et n'affichent donc jamais le bandeau.
+
+Après modification de `routes/banner.json`, redémarrer le serveur (le fichier est chargé une seule fois au démarrage, comme `routes/redirects.json`).

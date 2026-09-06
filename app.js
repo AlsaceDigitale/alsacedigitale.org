@@ -40,6 +40,7 @@ Object.defineProperty(express.request, 'fresh', {
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
+app.locals.banner = require('./routes/banner.json');
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());

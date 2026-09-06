@@ -21,41 +21,45 @@ html
 
   body
     block body
-      #ad-robotkraft-banner.ad-banner
-        .ad-banner__inner
-          i.icon-rocket
-          span.ad-banner__text
-            strong RobotKraft 2026
-            |  — Challenge de robotique &amp; IA à Strasbourg, du 2 au 4 octobre.
-          a.ad-banner__cta(href='/robotkraft')
-            | Je découvre
-            i.icon-arrow-right
-        button.ad-banner__close(type='button', aria-label='Fermer ce bandeau')
-          i.icon-remove
-      script.
-        (function(){
-          var KEY = 'ad-robotkraft-banner-dismissed-v1';
-          var banner = document.getElementById('ad-robotkraft-banner');
-          if (!banner) return;
-          var dismissed;
-          try { dismissed = localStorage.getItem(KEY); } catch(e) { dismissed = null; }
-          if (dismissed) {
-            banner.parentNode.removeChild(banner);
-            return;
-          }
-          function updateOffset(){
-            document.documentElement.style.setProperty('--ad-banner-height', banner.offsetHeight + 'px');
-          }
-          document.documentElement.classList.add('has-ad-banner');
-          updateOffset();
-          window.addEventListener('resize', updateOffset);
-          banner.querySelector('.ad-banner__close').addEventListener('click', function(){
-            document.documentElement.classList.remove('has-ad-banner');
-            window.removeEventListener('resize', updateOffset);
-            banner.parentNode.removeChild(banner);
-            try { localStorage.setItem(KEY, '1'); } catch(e){}
-          });
-        })();
+      if banner && banner.enabled
+        #ad-site-banner.ad-banner(data-dismiss-key=banner.dismissKey || 'ad-site-banner-dismissed')
+          .ad-banner__inner
+            if banner.icon
+              i(class=banner.icon)
+            span.ad-banner__text
+              if banner.highlight
+                strong= banner.highlight
+              = banner.text
+            if banner.ctaUrl
+              a.ad-banner__cta(href=banner.ctaUrl)
+                = banner.ctaLabel || 'En savoir plus'
+                i.icon-arrow-right
+          button.ad-banner__close(type='button', aria-label='Fermer ce bandeau')
+            i.icon-remove
+        script.
+          (function(){
+            var bannerEl = document.getElementById('ad-site-banner');
+            if (!bannerEl) return;
+            var KEY = bannerEl.dataset.dismissKey;
+            var dismissed;
+            try { dismissed = localStorage.getItem(KEY); } catch(e) { dismissed = null; }
+            if (dismissed) {
+              bannerEl.parentNode.removeChild(bannerEl);
+              return;
+            }
+            function updateOffset(){
+              document.documentElement.style.setProperty('--ad-banner-height', bannerEl.offsetHeight + 'px');
+            }
+            document.documentElement.classList.add('has-ad-banner');
+            updateOffset();
+            window.addEventListener('resize', updateOffset);
+            bannerEl.querySelector('.ad-banner__close').addEventListener('click', function(){
+              document.documentElement.classList.remove('has-ad-banner');
+              window.removeEventListener('resize', updateOffset);
+              bannerEl.parentNode.removeChild(bannerEl);
+              try { localStorage.setItem(KEY, '1'); } catch(e){}
+            });
+          })();
       #fb-root
       script.
         (function(d, s, id) {
