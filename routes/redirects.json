@@ -33,7 +33,7 @@
         "description": "Entraînez de vrais robots avec LeRobot (bras SO-ARM101). 2-4 octobre 2026, Illkirch. Python requis, IA non nécessaire. 70 places.",
         "keywords": "RobotKraft, challenge IA, robotique, LeRobot, intelligence artificielle, Strasbourg, Illkirch, robot learning, 2-4 octobre 2026",
         "canonicalUrl": "https://www.alsacedigitale.org/robotkraft",
-        "image": "https://www.alsacedigitale.org/images/social/robotkraft.png",
+        "image": "/images/social/robotkraft.png",
         "imageAlt": "RobotKraft Fest 2026 — challenge IA et robotique à Strasbourg, du 2 au 4 octobre",
         "imageType": "image/png",
         "imageWidth": 1920,
@@ -46,7 +46,7 @@
             "name": "Challenge IA & Robotique 2026 — RobotKraft Strasbourg",
             "description": "Entraînez de vrais robots avec LeRobot (bras SO-ARM101). 2-4 octobre 2026, Illkirch. Python requis, IA non nécessaire. 70 places.",
             "image": [
-                "https://www.alsacedigitale.org/images/social/robotkraft.png"
+                "/images/social/robotkraft.png"
             ],
             "url": "https://www.alsacedigitale.org/robotkraft",
             "startDate": "2026-10-02T18:00:00+02:00",
