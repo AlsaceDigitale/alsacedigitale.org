@@ -108,3 +108,15 @@ html.has-ad-banner #top-bar {
   top: var(--ad-banner-height, 3.125em);
   transition: top 0.2s ease-in-out;
 }
+
+.event-embed {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+html.has-ad-banner .event-embed {
+  height: calc(100% - var(--ad-banner-height, 3.125em));
+  margin-top: var(--ad-banner-height, 3.125em);
+}
