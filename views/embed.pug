@@ -36,5 +36,5 @@ block meta
         // JSON-LD is intentionally unescaped, but escape '<' to keep a configured value from closing the script element.
         script(type='application/ld+json')!= JSON.stringify(config.schema).replace(/</g, '\\u003c')
 
-block content
+block body
     iframe.event-embed(src=config.url, title=config.title, frameborder="0", width="100%", height="100%", loading="eager", referrerpolicy="strict-origin-when-cross-origin")
