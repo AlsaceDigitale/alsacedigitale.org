@@ -29,9 +29,56 @@
     "/robotkraft": {
         "url": "https://robotkraf.lovable.app",
         "method": "embed",
-        "title": "RobotKraft 2026 — Challenge de robotique et d’IA",
-        "description": "Du 2 au 4 octobre 2026, RobotKraft réunit des équipes autour de défis de robotique, vision par ordinateur et intelligence artificielle, inspirés de l’exploration spatiale.",
-        "keywords": "RobotKraft, challenge robotique, intelligence artificielle, vision par ordinateur, bras robotique, LeRobot, LeKiwi, exploration spatiale, octobre 2026"
+        "title": "Challenge IA & Robotique 2026 — RobotKraft Strasbourg",
+        "description": "3 jours pour entraîner de vrais robots avec LeRobot. 02-04 octobre 2026, Parc d’Innovation d’Illkirch. Python requis, expertise IA non. Inscrivez-vous.",
+        "keywords": "RobotKraft, challenge IA, robotique, LeRobot, intelligence artificielle, Strasbourg, Illkirch, robot learning, 2-4 octobre 2026",
+        "canonicalUrl": "https://www.alsacedigitale.org/robotkraft",
+        "image": "https://www.alsacedigitale.org/images/social/robotkraft.png",
+        "imageAlt": "RobotKraft Fest 2026 — challenge IA et robotique à Strasbourg, du 2 au 4 octobre",
+        "imageType": "image/png",
+        "imageWidth": 1920,
+        "imageHeight": 1080,
+        "siteName": "Alsace Digitale",
+        "locale": "fr_FR",
+        "schema": {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "Challenge IA & Robotique 2026 — RobotKraft Strasbourg",
+            "description": "3 jours pour entraîner de vrais robots avec LeRobot. 02-04 octobre 2026, Parc d’Innovation d’Illkirch. Python requis, expertise IA non. Inscrivez-vous.",
+            "image": [
+                "https://www.alsacedigitale.org/images/social/robotkraft.png"
+            ],
+            "url": "https://www.alsacedigitale.org/robotkraft",
+            "startDate": "2026-10-02T18:00:00+02:00",
+            "endDate": "2026-10-04T18:00:00+02:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "inLanguage": "fr-FR",
+            "maximumAttendeeCapacity": 70,
+            "location": {
+                "@type": "Place",
+                "name": "Parc d’Innovation d’Illkirch-Graffenstaden",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Illkirch-Graffenstaden",
+                    "addressRegion": "Grand Est",
+                    "addressCountry": "FR"
+                }
+            },
+            "organizer": {
+                "@type": "Organization",
+                "name": "Alsace Digitale",
+                "url": "https://www.alsacedigitale.org/"
+            },
+            "offers": {
+                "@type": "Offer",
+                "url": "https://www.helloasso.com/associations/alsace-digitale/evenements/robotkraft",
+                "availability": "https://schema.org/LimitedAvailability"
+            },
+            "sameAs": [
+                "https://robotkraf.lovable.app/"
+            ]
+        }
     },
     "/semaineia": {
         "url": "https://alsace-semaine-ia.lovable.app",

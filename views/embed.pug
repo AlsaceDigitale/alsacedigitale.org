@@ -3,15 +3,38 @@ extends layout
 block meta
     meta(name='title', content=config.title)
     meta(name='description', content=config.description)
-    meta(name='keywords', content=config.keywords)
+    if config.keywords
+        meta(name='keywords', content=config.keywords)
+    meta(name='author', content=config.siteName || 'Alsace Digitale')
     meta(name='robots', content='index, follow')
+    link(rel='canonical', href=config.canonicalUrl)
     meta(property='og:title', content=config.title)
     meta(property='og:description', content=config.description)
-    meta(property='og:image', content=config.image)
-    meta(property='og:url', content=config.url)
+    meta(property='og:url', content=config.canonicalUrl)
     meta(property='og:type', content='website')
-    meta(property='og:site_name', content=config.title)
+    meta(property='og:site_name', content=config.siteName || 'Alsace Digitale')
+    meta(property='og:locale', content=config.locale || 'fr_FR')
+    if config.image
+        meta(property='og:image', content=config.image)
+        meta(property='og:image:secure_url', content=config.image)
+        if config.imageType
+            meta(property='og:image:type', content=config.imageType)
+        if config.imageWidth
+            meta(property='og:image:width', content=config.imageWidth)
+        if config.imageHeight
+            meta(property='og:image:height', content=config.imageHeight)
+        if config.imageAlt
+            meta(property='og:image:alt', content=config.imageAlt)
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:title', content=config.title)
+    meta(name='twitter:description', content=config.description)
+    if config.image
+        meta(name='twitter:image', content=config.image)
+        if config.imageAlt
+            meta(name='twitter:image:alt', content=config.imageAlt)
+    if config.schema
+        // JSON-LD is intentionally unescaped, but escape '<' to keep a configured value from closing the script element.
+        script(type='application/ld+json')!= JSON.stringify(config.schema).replace(/</g, '\\u003c')
 
-block body
-    body
-        iframe(src=config.url, frameborder="0", width="100%", height="100%") 
+block content
+    iframe.event-embed(src=config.url, title=config.title, frameborder="0", width="100%", height="100%", loading="eager", referrerpolicy="strict-origin-when-cross-origin")

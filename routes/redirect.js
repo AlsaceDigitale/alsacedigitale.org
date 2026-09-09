@@ -29,11 +29,15 @@ exports.redirect = function (req, res) {
             redirectConfig.image = req.protocol + '://' + req.get('host') + redirectConfig.image;
         }
 
+        if (!redirectConfig.canonicalUrl) {
+            redirectConfig.canonicalUrl = req.protocol + '://' + req.get('host') + req.path;
+        }
+
         if (redirectConfig.method == 'meta-refresh') {
-            return res.render('redirect', { config: redirectConfig });
+            return res.render('redirect', { config: redirectConfig, title: redirectConfig.title || 'Alsace Digitale' });
         }
         if (redirectConfig.method == 'embed') {
-            return res.render('embed', { config: redirectConfig });
+            return res.render('embed', { config: redirectConfig, title: redirectConfig.title || 'Alsace Digitale' });
         }
         if (redirectConfig.method == 'redirect') {
             var redirectCode = redirectConfig.code || 301;

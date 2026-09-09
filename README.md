@@ -101,6 +101,8 @@ La redirection se configure dans le fichier `routes/redirects.json`
 Le champ `urlEnv` permet de lire une URL depuis une variable d'environnement.
 Le champ `urlConfig` permet d'utiliser la valeur exposée par `config.js` comme repli si la variable n'est pas définie.
 
+Pour une route `embed`, les champs `canonicalUrl`, `image`, `imageAlt`, `imageType`, `imageWidth`, `imageHeight`, `siteName` et `locale` permettent de renseigner les métadonnées de partage Open Graph et Twitter. Le champ `schema` peut contenir les données JSON-LD de la page, par exemple les informations structurées d'un événement. `canonicalUrl` doit être l'URL publique de la page d'Alsace Digitale, et `image` une URL absolue accessible par les robots des réseaux sociaux.
+
 ### Bandeau d'annonce (banner)
 
 Le site peut afficher un bandeau fixe en haut de page (ex. promotion d'un évènement), configuré dans `routes/banner.json` :
