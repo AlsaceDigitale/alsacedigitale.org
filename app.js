@@ -37,6 +37,7 @@ Object.defineProperty(express.request, 'fresh', {
 });
 
 // all environments
+app.set('trust proxy', true); // behind Scalingo's TLS-terminating proxy: req.protocol needs X-Forwarded-Proto
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
